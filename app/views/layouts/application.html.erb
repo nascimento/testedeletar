@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<%= csrf_meta_tags %>
+
+		<title>Turismo App</title>
+
+		<!-- ====================================================================================
+		STYLES BEGIN
+		===================================================================================== -->
+
+		<%= stylesheet_link_tag "application", :media => "all" %>
+
+		<%= stylesheet_link_tag "reset", :media => "all" %>
+		<%= stylesheet_link_tag "grid", :media => "all" %>
+		<%= stylesheet_link_tag "config", :media => "all" %>
+		<%= stylesheet_link_tag "plugin_config", :media => "all" %>
+
+		<!-- ======================================================================================
+		SCRIPTS BEGIN
+		======================================================================================= -->
+
+		<%= javascript_include_tag :defaults %>
+
+		<%= javascript_include_tag "application" %>
+
+		<%= javascript_include_tag "global_plugins_scripts" %>
+		<%= javascript_include_tag "../plugins/lightbox/js/lightbox/jquery.lightbox.min" %>
+
+		<%= javascript_include_tag "../plugins/jqueryui/all/jquery-ui-1.8.16.custom.min" %>
+		<%= javascript_include_tag "../plugins/validator/js/languages/jquery.validationEngine-en" %>
+		<%= javascript_include_tag "../plugins/validator/js/jquery.validationEngine" %>
+		<%= javascript_include_tag "../plugins/dialogs/jquery-fallr-1.2" %>
+		<%= javascript_include_tag "../plugins/tinymce/jscripts/tiny_mce/jquery.tinymce" %>
+		<%= javascript_include_tag "../plugins/spin/jquery-spin" %>
+		<%= javascript_include_tag "../plugins/qtip/jquery.qtip.min" %>
+		<%= javascript_include_tag "../plugins/plupload/js/browserplus-min" %>
+		<%= javascript_include_tag "../plugins/plupload/js/plupload.full" %>
+		<%= javascript_include_tag "../plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue" %>
+		<%= javascript_include_tag "../plugins/multiselect/js/ui.multiselect" %>
+		<%= javascript_include_tag "../plugins/datatables/media/js/jquery.dataTables" %>
+		<%= javascript_include_tag "../plugins/alerts/javascript/jquery.toastmessage" %>
+		<%= javascript_include_tag "../plugins/prettify/prettify" %>
+		<%= javascript_include_tag "../plugins/fullcalendar/fullcalendar.min" %>
+		<%= javascript_include_tag "../plugins/fileexplorer/js/elfinder.min" %>
+
+		<!--<%= javascript_include_tag "../plugins/fileexplorer/js/i18n/elfinder.ru" %>-->
+		<!-- Flotr2 Charts -->
+		<%= javascript_include_tag "../plugins/flotr2/flotr2.min" %>
+		<!--[if IE 8]><%= javascript_include_tag "../plugins/flotr2/flotr2.ie.min" %><![endif]-->
+
+		<!-- color picker -->
+		<%= javascript_include_tag "../plugins/colorpicker/js/colorpicker" %>
+		<%= javascript_include_tag "../plugins/colorpicker/js/eye" %>
+		<%= javascript_include_tag "../plugins/colorpicker/js/utils" %>
+		<%= javascript_include_tag "../plugins/colorpicker/js/layout" %>
+
+		<!-- = From JS Dir -->
+		<%= javascript_include_tag "modernizr.custom" %>
+		<%= javascript_include_tag "jquery.autogrowtextarea" %>
+		<%= javascript_include_tag "jquery.autotab-1.1b" %>
+
+		<!-- From JS Dir [plugin initialization] -->
+		<%= javascript_include_tag "dialog_fallr_init" %>
+		<%= javascript_include_tag "tiny_mce_init" %>
+		<%= javascript_include_tag "datatables_init" %>
+		<%= javascript_include_tag "head_scripts" %>
+
+	</head>
+	<body>
+
+		<section id="layout">
+
+			<div class="logo_profile container_12">
+
+				<div class="grid_6 logo_img">
+					<%= image_tag("/images/logo.jpg") %>
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div class="name">
+							<% if current_user %>
+							    Currently logged in as <strong><%= current_user.email %></strong> <%= link_to 'Logout', destroy_user_session_path %>
+							<% else %>
+								You're not logged in, <%= link_to 'Login', new_user_session_path %>
+							<% end %>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+
+			<section id="top">
+
+				<section id="top_bar">
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li>
+								<%= link_to :Dashboard, dashboard_path %>
+							</li>
+							<li>
+								<a href="#">Ambientes</a>
+								<ul>
+									<li>
+										<a href="form_elements.html">Homologação</a>
+									</li>
+									<li>
+										<a href="user_interface.html">Produção</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Produtos</a>
+								<ul>
+									<li>
+										<a href="charts.html">Flow</a>
+									</li>
+									<li>
+										<a href="datatables.html">Proof</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Procedimentos</a>
+								<ul>
+									<li>
+										<a href="charts.html">Flow</a>
+									</li>
+									<li>
+										<a href="datatables.html">Proof</a>
+									</li>
+								</ul>
+							</li>
+							
+							<% if current_user && current_user.admin? %>
+							<li>
+								<a href="#">Administration</a>
+								<ul>
+									<li>
+										<%= link_to :Customers, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to :Groups, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to :Users, users_path %>
+									</li>
+									<!--li>
+										<a href="#">Supply (Others)</a>
+										<ul>
+											<li>
+												AAAAAAAA
+											</li>
+											<li>
+												BBBBBBBB
+											</li>
+										</ul>
+									</li-->
+								</ul>
+							</li>
+							<% end %>
+						</ul>
+						<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+
+				<section class="top_in">
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+								<div class="clear"></div>
+								<ul class="jTscroller">
+									<li>
+										<%= link_to "<span class='icon10'></span>".html_safe + :Upload, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon3'></span>".html_safe + :Relatórios, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon5'></span>".html_safe + :Procedimentos, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon2'></span>".html_safe + :Agenda, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon1'></span>".html_safe + "Mapa de Produção", dashboard_path %>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+
+			</section><!-- End of #top -->
+
+			<section id="container" class="container_12">
+				<% if notice %>
+					<script>
+						$(function() { 
+							showSucessToast('<%= notice %>');	
+						});
+					</script>
+				<% end %>
+				
+				<% if alert %>
+					<div class="alert error_msg"><span class="alert_close"></span> <%= alert %> </div>
+				<% end %>
+				
+				<%= yield %>
+				
+			</section><!-- End of #container -->
+
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+		
+		<!-- Bottom Scripts -->
+		<%= javascript_include_tag "jqueryui_init" %>
+		<%= javascript_include_tag "flotr2_init" %>
+		<%= javascript_include_tag "bottom_scripts" %>
+		<%= javascript_include_tag "custom_pages" %>
+		<%= javascript_include_tag "jquery.thumbnailScroller" %>
+
+	</body>
+</html>

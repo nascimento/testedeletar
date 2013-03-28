@@ -1,0 +1,25 @@
+<!-- ======= .grid_12 - block begin ======= -->
+<section class="grid_12">
+	<div class="box">
+		<div class="title"><span class="icon16_sprite i_network_monitor"></span>
+			<%= singular_table_name %>
+			<span class="fr">
+				<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> | <%%= link_to 'Back', <%= index_helper %>_path %>
+			</span>
+		</div>
+		
+		<div class="inside">
+			<!-- formee-->
+			<% attributes.each do |attribute| -%>
+				<p>
+				  	<strong><%= attribute.human_name %>:</strong>
+  					<%%= @<%= singular_table_name %>.<%= attribute.name %> %>
+				</p>
+			<% end %>
+			<!-- formee-->
+		</div>
+	</div>
+</section>
+<div class="clear"></div>
+<!-- ======= .grid_12 - block end ======= -->
+

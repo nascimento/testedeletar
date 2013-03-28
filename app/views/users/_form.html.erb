@@ -1,0 +1,17 @@
+<%= simple_form_for @admin_webserver, :html => { :class => "formee" }  do |f| %>
+	
+	<div class="in">
+			<%= f.input :name %>
+	</div>
+	
+  	<!--Form footer begin-->
+	<section class="box_footer">
+		<div class="grid-12-12">
+			<input type="reset" class="right button red" value="Clear" />
+			<%= f.button :submit, :class => "right button green" %>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<!--Form footer end-->
+
+<% end %>
