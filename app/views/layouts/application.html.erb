@@ -83,7 +83,7 @@
 					<div class="user_meta">
 						<div class="name">
 							<% if current_user %>
-							    Currently logged in as <strong><%= current_user.email %></strong> <%= link_to 'Logout', destroy_user_session_path %>
+							    Currently logged in as <strong> <%= current_user.email %> </strong> <%= link_to :Edit, edit_user_registration_path(current_user) %> - <%= link_to 'Logout', destroy_user_session_path %>
 							<% else %>
 								You're not logged in, <%= link_to 'Login', new_user_session_path %>
 							<% end %>
@@ -141,7 +141,7 @@
 								<a href="#">Administration</a>
 								<ul>
 									<li>
-										<%= link_to :Customers, dashboard_path %>
+										<%= link_to :Customers, customers_path %>
 									</li>
 									<li>
 										<%= link_to :Groups, dashboard_path %>

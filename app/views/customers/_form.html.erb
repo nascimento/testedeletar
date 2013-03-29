@@ -1,7 +1,8 @@
-<%= simple_form_for @admin_webserver, :html => { :class => "formee" }  do |f| %>
+<%= simple_form_for @customer, :html => { :class => "formee" }  do |f| %>
 	
 	<div class="in">
 			<%= f.input :name %>
+			<%= f.input :hostname %>
 	</div>
 	
   	<!--Form footer begin-->
