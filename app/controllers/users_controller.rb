@@ -1,11 +1,9 @@
 class UsersController < InheritedResources::Base
-  actions :index, :show
+  actions :index, :show, :destroy
   respond_to :html, :json, :xml
-  
-  # def update
-  #   update!{users_url}
-  # end
-  # def create
-  #   create!{users_url}
-  # end
+
+  def index
+    @users = Customer.find(current_customer.id).users
+    super
+  end
 end

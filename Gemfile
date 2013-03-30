@@ -30,6 +30,8 @@ gem 'devise'
 # gem 'google_authentication'
 gem 'cancan'
 
+gem 'awesome_nested_set'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

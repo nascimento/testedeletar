@@ -1,0 +1,18 @@
+<%= simple_form_for @group, :html => { :class => "formee" }  do |f| %>
+	
+	<div class="in">
+			<%= f.input :name %>
+			<%= f.hidden_field :parent_id %>
+	</div>
+	
+  	<!--Form footer begin-->
+	<section class="box_footer">
+		<div class="grid-12-12">
+			<input type="reset" class="right button red" value="Clear" />
+			<%= f.button :submit, :class => "right button green" %>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<!--Form footer end-->
+
+<% end %>

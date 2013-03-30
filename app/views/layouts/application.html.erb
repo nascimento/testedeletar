@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<%= csrf_meta_tags %>
 
-		<title>Turismo App</title>
+		<title>Turismo App | <%= current_customer.name %></title>
 
 		<!-- ====================================================================================
 		STYLES BEGIN
@@ -77,13 +77,15 @@
 			<div class="logo_profile container_12">
 
 				<div class="grid_6 logo_img">
-					<%= image_tag("/images/logo.jpg") %>
+					<%= current_customer.name %>		
 				</div>
 				<div class="grid_6 profile_meta">
 					<div class="user_meta">
-						<div class="name">
+						<div class="name ar">
 							<% if current_user %>
-							    Currently logged in as <strong> <%= current_user.email %> </strong> <%= link_to :Edit, edit_user_registration_path(current_user) %> - <%= link_to 'Logout', destroy_user_session_path %>
+							    Currently logged in as <strong> <%= current_user.nickname %> </strong> <%= current_user.email %>  
+								<br>
+								<%= link_to :Edit, edit_user_registration_path(current_user) %> - <%= link_to 'Logout', destroy_user_session_path %>
 							<% else %>
 								You're not logged in, <%= link_to 'Login', new_user_session_path %>
 							<% end %>
@@ -136,15 +138,17 @@
 								</ul>
 							</li>
 							
-							<% if current_user && current_user.admin? %>
+							<% if current_user %>
 							<li>
 								<a href="#">Administration</a>
 								<ul>
+									<% if current_user.admin? %>
 									<li>
 										<%= link_to :Customers, customers_path %>
 									</li>
+									<% end %>
 									<li>
-										<%= link_to :Groups, dashboard_path %>
+										<%= link_to :Groups, groups_path %>
 									</li>
 									<li>
 										<%= link_to :Users, users_path %>
