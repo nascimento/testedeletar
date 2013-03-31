@@ -3,7 +3,7 @@ class GroupsController < InheritedResources::Base
   respond_to :html, :json, :xml
   
   def index
-    @groups = Customer.find(current_customer.id).groups
+    @groups = Customer.find(current_customer.id).groups.order('lft ASC')
     super
   end
   def update

@@ -8,4 +8,5 @@ class Group < ActiveRecord::Base
   # Relations  
   belongs_to :customers
   has_and_belongs_to_many :users
+  belongs_to :parent, :class_name => "Group"
 end
