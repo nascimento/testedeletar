@@ -4,7 +4,9 @@
 			<%= f.input :name %>
 			<%= f.hidden_field :parent_id, :value => params[:parent_id] %>
 			
-			<%= f.collection_check_boxes :user_ids, @users, :id, :name %>
+			<% if @users %>
+				<%= f.collection_check_boxes :user_ids, @users, :id, :name %>
+			<% end %>
 
 	</div>
 	
