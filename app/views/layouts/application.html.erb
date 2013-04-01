@@ -81,11 +81,14 @@
 				</div>
 				<div class="grid_6 profile_meta">
 					<div class="user_meta">
-						<div class="name ar">
+						<div>
+							<%= image_tag avatar_url(current_user), :alt => "gravatar.com" %>
+						</div>
+						<div class="name">
 							<% if current_user %>
-							    Currently logged in as <strong> <%= current_user.nickname %> </strong> <%= current_user.email %>  
+							    <strong> <%= current_user.nickname %> </strong> (<%= current_user.email %>)
 								<br>
-								<%= link_to :Edit, edit_user_registration_path(current_user) %> - <%= link_to 'Logout', destroy_user_session_path %>
+								<%= link_to :Edit, edit_user_registration_path(current_user), :class => "submeta" %>  <%= link_to 'Logout', destroy_user_session_path, :class => "submeta" %>
 							<% else %>
 								You're not logged in, <%= link_to 'Login', new_user_session_path %>
 							<% end %>
@@ -186,10 +189,19 @@
 										<%= link_to "<span class='icon3'></span>".html_safe + :Relatórios, dashboard_path %>
 									</li>
 									<li>
-										<%= link_to "<span class='icon5'></span>".html_safe + :Reservas, dashboard_path %>
+										<%= link_to "<span class='icon4'></span>".html_safe + :Reservas, dashboard_path %>
 									</li>
 									<li>
 										<%= link_to "<span class='icon2'></span>".html_safe + :Agenda, dashboard_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon9'></span>".html_safe + :Users, users_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon19'></span>".html_safe + :Groups, groups_path %>
+									</li>
+									<li>
+										<%= link_to "<span class='icon6'></span>".html_safe + :Customers, customers_path %>
 									</li>
 									
 								</ul>

@@ -3,7 +3,7 @@ class Group < ActiveRecord::Base
   acts_as_nested_set
   
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :name, :customer_id, :parent_id
+  attr_accessible :name, :customer_id, :parent_id, :user_ids
   
   # Relations  
   belongs_to :customers

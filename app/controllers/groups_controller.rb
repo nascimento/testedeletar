@@ -6,6 +6,14 @@ class GroupsController < InheritedResources::Base
     @groups = Customer.find(current_customer.id).groups.order('lft ASC')
     super
   end
+  def edit
+    @users = Customer.find(current_customer.id).users
+    super
+  end
+  def create
+    @users = Customer.find(current_customer.id).users
+    super
+  end
   def update
     update!{groups_url}
   end
