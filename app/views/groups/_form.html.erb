@@ -1,13 +1,29 @@
 <%= simple_form_for @group, :html => { :class => "formee" }  do |f| %>
 	
 	<div class="in">
-			<%= f.input :name %>
-			<%= f.hidden_field :parent_id, :value => params[:parent_id] %>
-			
-			<% if @users %>
-				<%= f.collection_check_boxes :user_ids, @users, :id, :name %>
-			<% end %>
-
+		<%= f.input :name %>
+		<%= f.hidden_field :parent_id, :value => params[:parent_id] %>
+		
+		
+		<!-- ======= UI TABS ======= -->
+		<div class="ui_tabs">
+			<ul>
+				<li><a href="#tabs-1">Users</a></li>
+				<li><a href="#tabs-2">Permissions</a></li>
+			</ul>
+			<div id="tabs-1">
+				<p>
+					<% if @users %>
+						<p>
+							<%= f.collection_check_boxes :user_ids, @users, :id, lambda {|x| ("#{x[:name]} (#{x[:email]})")}, :item_wrapper_class => 'grid-6-12' %>
+						</p>
+					<% end %>
+				</p>
+			</div>
+			<div id="tabs-2">
+				<p></p>
+			</div>
+		</div>
 	</div>
 	
   	<!--Form footer begin-->

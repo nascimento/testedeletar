@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+			
+			
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><div class="layout">HTML Structure</div></div>						
+						<div class="inside">
+							<div class="in">
+							
+							<div class="clear"></div>
+							<a href="zForms.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Forms</a>
+							<div class="clear"></div>
+							
+							<h4 class="docs_title_first">HTML Structure</h4>
+							<p>This template is based on 960 grid system (fluid version). Main template parts are &quot;The header&quot; and &quot;The content&quot;.<br /><br />
+							<strong>Here is the HTML structure for a single page:</strong></p>
+								
+<pre>&lt;!DOCTYPE html>
+&lt;html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    &lt;head>
+		HEAD SCRIPTS AND STYLES
+    &lt;/head>
+    &lt;body>		
+		&lt;section id="layout">
+			&lt;div class="logo_profile container_12">
+				&lt;div class="grid_6 logo_img">
+					&lt;img src="images/logo.png" alt="Logo" />
+				&lt;/div>
+				&lt;div class="grid_6 profile_meta">
+					PROFILE META
+				&lt;/div>
+				&lt;/div>
+				&lt;div class="clear">&lt;/div>
+			&lt;/div>
+			&lt;section id="top">
+				&lt;section id="top_bar">						
+					&lt;section id="main_menu">
+						MAIN MENU							
+					&lt;div class="clear">&lt;/div>
+					&lt;/section>&lt;!-- End of #main_menu -->
+				&lt;/section>&lt;!-- End of #top_bar -->
+				&lt;div class="clear">&lt;/div>
+				&lt;section class="top_in">	
+					&lt;section id="second_top_bar">
+						QUICK TASK ICONS MENU					
+					&lt;/section>&lt;!-- End of #second_top_bar -->
+				&lt;/section>&lt;!-- End of .top_in -->
+			&lt;/section>&lt;!-- End of #top -->
+			&lt;section id="container" class="container_12">
+				MAIN CONTENT			
+			&lt;/section>&lt;!-- End of #container -->
+		&lt;/section>&lt;!-- End of #layout -->
+		&lt;div class="clear">&lt;/div>
+		&lt;section id="footer_bar">
+			FOOTER CONTENT
+		&lt;/section>		
+		OTHER SCRIPTS AND STYLES		
+    &lt;/body>
+&lt;/html></pre>
+							<h5 class="docs_title">What's that?</h5>
+							<p>OK. The code above can look a bit strange, so, let me explain every element.</p>
+							<p>I think you know what must be included between <code>&lt;head&gt;&lt;/head&gt;</code>
+							, so, I will not stay here to explain. I will start directly at <code>&lt;body&gt;</code>. Anyway, I will explain for every plugin/script/element if require or not some code to be included between <code>&lt;head&gt;</code> tags. </p>
+							<p>We have &quot;top part&quot;, &quot;middle part&quot;, and &quot;bottom part&quot;. These parts include:</p>
+							<ul>
+							  <li> top part:<em> logo, current user meta, main menu and quick tast icons.</em></li>
+							  <li>middle part: <em>all content.</em></li>
+
+							  <li>bottom part: <em>currently only a copyright notice. You can add everything you want here (for ex.: another menu.)</em></li>
+							</ul>
+							
+							<p>
+							<strong>NOTE:</strong><br />
+							 - "top part" and "middle part" are included into a section<span class="text-red">*</span> whith class <code>"layout"</code><br />
+							 - "bottom part" come after this section<br />
+							 <span class="text-red">*</span> <em>you can use <code>div</code> tag instead of <code>section</code>. Section tag is specific for HTML5.</em>
+							</p>
+							
+							<h4 class="docs_title">Top part </h4>
+								<p>"Top part" consists of two main elements: </p>
+								<p><strong>Logo and user profile meta</strong></p>
+<pre>&lt;div class="logo_profile container_12">
+    &lt;div class="grid_6 logo_img">
+        &lt;img src="images/logo.png" alt="Logo" />
+    &lt;/div>
+    &lt;div class="grid_6 profile_meta">
+        PROFILE META
+    &lt;/div>
+    &lt;/div>
+    &lt;div class="clear">&lt;/div>
+&lt;/div></pre><br />
+
+
+								<p><strong>Main menu and quick task icons</strong></p>
+								<p>These two elements must be included into a section(or div) with ID <code>"top"</code></p>
+<pre>&lt;section id="top">
+	&lt;!-- Here will be the menu and quick task icons -->
+&lt;/section></pre><br />
+
+								<p><strong>Main menu structure:</strong></p>
+<pre>&lt;section id="top_bar">						
+	&lt;section id="main_menu">
+		MAIN MENU							
+	&lt;div class="clear">&lt;/div>
+	&lt;/section>&lt;!-- End of #main_menu -->
+&lt;/section>&lt;!-- End of #top_bar -->
+&lt;div class="clear">&lt;/div></pre>
+							
+							<p>The menu is based on SuperFish script.</p>
+							
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/" target="_blank">http://users.tpg.com.au/j_birch/plugins/superfish/</a>   - Superfish plugin official website </li>
+								
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							<p>It require to include these lines in template <code>&lt;head></code> </p>
+
+<pre>&lt;script type="text/javascript" src="js/global_plugins_scripts.js">&lt;/script>
+&lt;script type="text/javascript" src="js/head_scripts.js">&lt;/script></pre><br />
+							
+							<p><code>global_plugins_scripts.js</code> - contain the plugin script and other required scripts.<br />
+							<code>head_scripts.js</code> - contain a piece of code which initialize the menu. Below is shown how this code look:</p>
+
+<pre>/*
+---------------------------------
+	Main Menu
+---------------------------------
+*/
+ $(document).ready(function(){ 
+	$("ul.sf-menu").supersubs({ 
+		minWidth:    15,  // minimum width of sub-menus in em units
+		maxWidth:    20,  // maximum width of sub-menus in em units
+		extraWidth:  1 	  // extra width can ensure lines don't sometimes turn over 
+                          // due to slight rounding differences and font-family 
+	}).superfish({
+		delay:	0,  //delay on mouseout, in miliseconds (1 sec = 1000 miliseconds)
+		animation: {height:'show'}  //the animation. This will slide down. For fade-in use this -> opacity:'show'
+	});
+});</pre><br />
+							
+							
+	
+							<p><strong>The menu structure looks like this:</strong></p>
+<pre>&lt;ul class="sf-menu">
+	&lt;li>&lt;a href="index.php">Dashboard&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Item 1 level 1&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Item 2 level 1&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Item 3 level 1&lt;/a>
+		&lt;ul>
+			&lt;li>&lt;a href="#">Item 1 level 2&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#">Item 2 level 2&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#">Item 3 level 2&lt;/a>
+				&lt;ul>
+					&lt;li>&lt;a href="#">Item 1 level 3&lt;/a>&lt;/li>
+					&lt;li>&lt;a href="#">Item 2 level 3&lt;/a>&lt;/li>
+					&lt;li>&lt;a href="#">Item 3 level 3&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/li>&lt;!-- End of item 3 level 2 -->
+		&lt;/ul>
+	&lt;/li>&lt;!-- End of item 3 level 1 -->
+&lt;/ul>&lt;!-- End of .sf-menu --></pre>
+
+
+							<h4 class="docs_title">Middle part</h4>
+							<p>"Middle part" is the most important part. Here is show all content from a specific page. His structure looks so:</p>
+<pre>&lt;section id="container" class="container_12">
+	MAIN CONTENT			
+&lt;/section>&lt;!-- End of #container --></pre><br />
+							
+							<div class="alignright docs_imgframe">
+								<a href="images/assets/docs/box_details.png" class="lightbox" title="Content Box"><img src="images/assets/docs/2.jpg" alt="" /></a>
+								<br /><em><strong>Fig. 1.1.</strong> Box details.</em>
+							</div>
+							<div class="alignright docs_imgframe">
+								<a href="images/assets/docs/1.jpg" class="lightbox" title="Content Box Details"><img src="images/assets/docs/0.jpg" alt="" /></a>
+								<br /><em><strong>Fig. 1.0.</strong> Content box.</em>
+							</div>
+							
+							<p>
+							<code>id="container"</code> - add 20px margin to top and 10px margin to bottom. Also it has a minimum height of 400px to make sure that template will not be destroyed if here are only a few lines of content.</p>
+							<p>
+							<code>class="container_12"</code> - enable support for 960 grid system. Now once you have added this class your template is fully compatible with 960gs.</p>
+							
+							<p>All content is recomended(but is not required) to include in "boxes". (Click <strong>Fig. 1.0</strong>)</p><br />
+							
+							<p><strong>Box HTML structure:</strong></p>
+<pre>&lt;section class="grid_4">
+	&lt;div class="box">
+		&lt;div class="title">Title&lt;/div>						
+		&lt;div class="inside">
+			&lt;div class="in">
+				
+				HERE IS ALL CONTENT
+				
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section></pre><br />
+							
+							<p><strong>So what's that:</strong> (Click <strong>Fig. 1.1</strong>)</p>
+							<ol>
+								<li>Use 960 grid system to arange the box on page and define the width: <code>&lt;section class="grid_4"> ... &lt;/section></code></li>
+								<li>Next create the box itself: <code>&lt;div class="box"> ... &lt;/div></code></li>
+								<li>The box will have a title: <code>&lt;div class="title">Title&lt;/div></code> and a div with class <code>"inside"</code> and that in its turn another div with class <code>"in"</code></li>
+							</ol>
+							
+							<p><strong>NOTE:</strong> <code>&lt;div class="in"> here is the content &lt;/div></code> - creates a 10px space around the content. If you wish to have a box without inner space, don't use this div.</p>
+							
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://960.gs/" target="_blank">http://960.gs/</a> - 960 grid system official website </li>
+								<li><a href="http://www.designinfluences.com/fluid960gs/" target="_blank">http://www.designinfluences.com/fluid960gs/</a> - fluid 960 grid system official website</li>
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							<h4 class="docs_title">Bottom part</h4>
+							
+							<p>"Bottom part" is a simple addition for you, to have a ready-made footer, if you want to add something to end of a page.</p>
+							<br />
+							<strong>HTML Structure:</strong><br />
+							
+<pre>&lt;section id="footer_bar">
+	&lt;div class="copyr">Copyright <em>&amp;copy;</em> Smartik 2012&lt;/div>
+&lt;/section></pre><br />
+							<a href="zForms.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Forms</a>
+							
+							<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<%= simple_form_for @user, :html => { :class => "formee" }  do |f| %>
+	
+	<div class="in">
+			<%= f.input :name %>
+			<%= f.input :email %>
+			<%= f.input :nickname %>
+
+			<!-- ======= UI TABS ======= -->
+			<div class="ui_tabs">
+				<ul>
+					<li><a href="#tabs-1">Groups</a></li>
+				</ul>
+				<div id="tabs-1">
+					<p>
+						<% if @groups %>
+							<p>
+								<%= f.collection_check_boxes :group_ids, @groups, :id, lambda {|x| ("#{'--' * x.level} #{x[:name]}")}, :item_wrapper_class => "block" %>
+							</p>
+						<% end %>
+					</p>
+				</div>
+			</div>
+	</div>
+
+	
+  	<!--Form footer begin-->
+	<section class="box_footer">
+		<div class="grid-12-12">
+			<input type="reset" class="right button red" value="Clear" />
+			<%= f.button :submit, :class => "right button green" %>
+		</div>
+		<div class="clear"></div>
+	</section>
+	<!--Form footer end-->
+
+<% end %>

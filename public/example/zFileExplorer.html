@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+			
+			
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><div class="layout">File Explorer</div></div>						
+						<div class="inside">
+							<div class="in">
+							
+							<div class="clear"></div>
+							<a href="zDataTables.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Data Tables</a>		
+							<a href="zDialogsAlerts.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Dialogs &amp; Alerts</a>
+							<div class="clear"></div>
+							
+							<h4 class="docs_title_first">File Explorer</h4>
+							
+							<p></p>
+							
+							
+							<p><strong>How to create a File Explorer?</strong></p>
+							
+							
+							<p><strong>1. Initialize the plugin</strong></p>
+							
+<pre>jQuery().ready(function() {
+	jQuery('#finder').elfinder({
+		
+		// Options here....
+		
+	})
+});</pre><br />
+
+
+							<p><strong>2. Define Options</strong></p><br />
+                            
+<pre>jQuery().ready(function() {
+	jQuery('#finder').elfinder({
+	
+		url : 'plugins/fileexplorer/connectors/php/connector.php', //PHP Connector  !!! The only required option
+		lang : 'en' // Language
+		
+	})
+});</pre><br />
+
+
+
+
+							<p><strong>3. Create a new DIV with ID <code>"finder"</code></strong></p><br />
+                            
+<pre>
+
+	&lt;div id=<code>"finder"</code>>&lt;/div>
+	
+</pre><br /><br />
+
+
+<p><strong>4. It is optimized to become a part of a "box". So, include this div in a "box".</strong></p><br />
+                            
+<pre>
+
+&lt;section class="grid_12">
+	&lt;div class="box">
+		&lt;div class="title">&lt;span class="icon16_sprite i_folder">&lt;/span>File explorer&lt;/div>
+		
+		&lt;div class="inside">
+												
+			&lt;!-- File explorer -->&lt;div id="finder">finder&lt;/div>&lt;!-- /File explorer -->							
+			&lt;div class="clear">&lt;/div>
+			
+		&lt;/div>
+		
+	&lt;/div>
+&lt;/section>
+&lt;div class="clear">&lt;/div>
+	
+</pre><br /><br />
+
+							
+							
+							
+							<div class="docs_result"><span class="docsR_title">The result of the code above:</span>						
+								
+								<section class="grid_12">
+									<div class="box">
+										<div class="title"><span class="icon16_sprite i_folder"></span>File explorer</div>
+										
+										<div class="inside">
+																				
+											<!-- File explorer --><div id="finder">finder</div><!-- /File explorer -->							
+											<div class="clear"></div>
+											
+										</div>
+										
+									</div>
+								</section>
+								<div class="clear"></div>
+								
+							</div>
+							<div class="clear"></div>
+							
+							<div class="box">
+								<div class="title">Options</div>								
+								<div class="inside">
+									<table cellpadding="0" cellspacing="0" border="0" class="display" id="datatable_1docs">
+		<thead>
+			<tr>
+				<th width="20%">OPTION</th>
+				<th width="30%">TYPE / VALUE</th>
+				<th width="50%">DESCRIPTION</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr class="gradeA odd">
+			<td><code>url</code></td>
+			<td><code>String</code></td>
+			<td>connector URL. <span class="text-red">The only required option</span></td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>lang</code></td>
+			<td><code>String</code></td>
+			<td>Interface language. Require to include file <em>js/i18n/elfinder.LANG.js</em>, where <em>LANG</em> is two-letter language code, for example <code>ru</code></td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>cssClass</code></td>
+			<td><code>String</code></td>
+			<td>Additional CSS class for container</td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>wrap</code></td>
+			<td><code>Integer</code></td>
+			<td>Number of symbols to show in a row when splitting long filenames in "icons" view. By default - <code>14</code>. Do not split log filenames - <strong><code>0</code></strong></td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>places</code></td>
+			<td><code>String</code></td>
+			<td>Folder name for "favorites". Can be localized. By default - <code>Places</code>. You can set this to empty string <code>""</code> to disable "favorites"</td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>placesFirst</code></td>
+			<td><code>Boolean</code></td>
+			<td>Place "favorites" before file tree in navigation panel. By default - <code>true</code></td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>editorCallback</code></td>
+			<td><code>Function</code> or <code>null</code></td>
+			<td>Callback function for WYSIWYG editor (CKEditor, TinyMCE, elRTE etc...). This function will get argument (String) - URL of selected file</td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>cutURL</code></td>
+			<td><code>String</code></td>
+			<td>Cut string from the URL when calling editorCallback, to cut base url use special value <code>root</code></td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>closeOnEditorCallback</code></td>
+			<td><code>Boolean</code></td>
+			<td>Close elFinder after calling editorCallback? By default - <code>true</code>. (useless for CKEditor, TinyMCE)</td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>view</code></td>
+			<td><code>String</code></td>
+			<td>Default directory view. Possible values: <code>icons</code>, <code>list</code>. By default - <code>icons</code></td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>width</code></td>
+			<td><code>Integer</code> or <code>String</code></td>
+			<td>Width of file manager. By default not set, but takes value from CSS file <a href="plugins/fileexplorer/css/elfinder.css" class="source">source:plugins/fileexplorer/css/elfinder.css</a></td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>height</code></td>
+			<td><code>Integer</code></td>
+			<td>Height of file manager. By default not set, also can be set in CSS</td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>disableShortcuts</code></td>
+			<td><code>Boolean</code></td>
+			<td>Disable shortcut keys (except arrows and space). By default - <code>false</code></td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>rememberLastDir</code></td>
+			<td><code>Boolean</code></td>
+			<td>Open last visited directory after page reload or after browser restart</td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>cookie</code></td>
+			<td><code>Object</code></td>
+			<td>Set cookie (stores current view, last visited directory, "favorites"). By default - <code>{expires : 30, domain  : '', path    : '/', secure  : false}</code></td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>toolbar</code></td>
+			<td><code>Array</code></td>
+			<td>Groups of icons in toolbar. By default - all available buttons/commands</td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>contextmenu</code></td>
+			<td><code>Object</code></td>
+			<td>Contents of context menu. By default - all available commands</td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>dialog</code></td>
+			<td><code>Object</code></td>
+			<td>jQueryUI dialog options with which elFinder will be opened. If docked == true - elFinder will be opened with "undock" feature (make it dialog window)</td>
+		</tr>
+		<tr class="gradeA odd">
+			<td><code>docked</code></td>
+			<td><code>Boolean</code></td>
+			<td>Allow "undock" feature (can be refered in docks as "docked mode")</td>
+		</tr>
+		<tr class="gradeA even">
+			<td><code>autoReload</code></td>
+			<td><code>Integer</code></td>
+			<td>Amount of munites after which to update current directory contents. By default - <code>0</code> (disabled)</td>
+		</tr>
+	</tbody></table>								
+									<div class="clear"></div>
+								</div>
+							</div>
+							
+							
+							
+							
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://elrte.org/redmine/projects/elfinder/wiki" target="_blank">http://elrte.org/redmine/projects/elfinder/wiki</a> - Wiki.</li>
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							
+							
+							<div class="clear"></div>
+							<a href="zDataTables.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Data Tables</a>		
+							<a href="zDialogsAlerts.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Dialogs &amp; Alerts</a>
+							<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

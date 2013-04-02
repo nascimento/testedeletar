@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_plane"></span>16px icons. Demonstration and Usage</div>
+						
+						<div class="inside">
+							<div class="in">
+														
+								<section id="demo_16px_icons" class="grid_12">
+									
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_3d"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_abacus"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_access_point"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_add"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_address_book"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_administrator"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_agent"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_aim"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_alien"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_align_horizontal_bottom"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_align_horizontal_center"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_align_horizontal_top"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_align_vertical_left"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_align_vertical_right"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_anonymous"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_antenna2"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrow_bidirectional"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrow_down"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrow_left"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrow_right"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrow_up"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrowhead_down"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrowhead_left"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrowhead_right"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_arrowhead_up"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_audio_console"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_audio_equalizer"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_audio_knob2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_audio_volume_bars"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_backup"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_balance"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ball_baseball"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ball_beach"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ball_football2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ball_football"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ball_volleyball"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_band_aid"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_bell"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_bezier"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_black_list"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_black_list_folder"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_blur"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_bomb"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_book"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_bookmark"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_briefcase"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_brightness"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_broadband"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_broken_link2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_broken_link"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_brush"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_brush_wide"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_bus"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_calculator"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_calculator_buttons"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_calendar"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_calendar_month"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_calendar_year"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_camera"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cancel"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cd_disk"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_certificate2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_chat_exclamation"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_checkmark"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_clapperboard"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_clip"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_clipboard"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_clock"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_close"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cloud"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cocktail"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_coffee1"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_contrast"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_copy2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_copy"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_couple"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_crop"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cross"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cupcake"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_currency_sign_dollar"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_currency_sign_euro"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_currency_sign_pound"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_cutter"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_delete"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_dimensions"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_diskette"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_dispatch"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_distribute_horizontal_center"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_distribute_vertical_center"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_document1"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_document"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_door"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_download"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_dropper"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_earphones"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_edit"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_envelope"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_envelope_open2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_eraser"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_eye_open"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_fax"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_file"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_file_transfer"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_fill"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_film_reel"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_flash"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_flip_horizontal"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_flip_vertical"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_flower"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_folder"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_frames2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_frames"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_gear"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_group"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hand_handshake"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hand_point"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hand_share"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hand_smudge"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hand_thumbsdown"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hand_thumbsup"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_headset"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_heart"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_height"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_help"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_history2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_history3"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_home"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_hourglass"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_info"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ip"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ipod"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_key"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_lan_cable"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_lcd"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_lightbulb_off"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_lightbulb_on"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_link2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_link"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_list2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_list"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_location"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_lock"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_lock_open"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_mastercard"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_match_width_and_height"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_messenger"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_microphone"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_mobile"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_money_bag_dollar"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_monitor"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_moon"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_motion_blur"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_mouse"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_move"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_music_beamed_note"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_music_eighth_note"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_network_monitor"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_notepad"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ntsc_bars"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_organizational_chart"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_palette"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_paste"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_pen"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_pen_drive"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_pencil"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_phone_book"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_photoshop"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_plane"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_playlist"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_polygon"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_pop-up"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_preview2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_preview"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_print"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_printer"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_product"></span></a>										
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_progress_bar"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_protocol1"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_protocol2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_pyramid"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_quarantine"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_random"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_red_cross"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_red_eye"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_refresh"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_reload"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_repeat"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_resize"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_round"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_rounded_rectangle"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_ruler_square"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_salesman"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_satellite_dish"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_scissors"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_secure_connection"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_security"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_send_crate"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_shopping_basket"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_shopping_cart"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_smiley"></span></a> 
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_smiley_angry"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_smiley_confused"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_smiley_grin"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_socket"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_speaker"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_speech_balloon"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_spiral"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_spray"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_spreadsheet"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_stamp"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_star"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_stats_bar_chart"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_stats_line_chart"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_stats_pie_chart"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_technical_hammer"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_technical_screwdriver"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_technical_wrench"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_trash_can"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_treasure_chest"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_trojan"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_trojan2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_trophy"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_truck"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_upload"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_usb2"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_user"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_user_woman"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_white_list_folder"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_window"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_windows"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_wizard"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_world"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_zoom"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_zoom_in"></span></a>
+									<a href="#" class="button with_icon16_notext"><span class="icon16_sprite i_zoom_out"></span></a>
+								</section>
+								
+								
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_hand_smudge"></span>Buttons with 24px icons. Demonstration and Usage</div>
+						
+						<div class="inside">
+							<div class="in">
+								
+								<div id="demo_24px_icons">
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_3d"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_abacus"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_access_point"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_add"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_address_book"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_administrator"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_agent"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_aim"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_alien_gray"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_align_horizontal_bottom"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_align_horizontal_top"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_align_vertical_left"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_align_vertical_right"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_animation"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_anonymous"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_antenna2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrow_bidirectional"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrow_down"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrow_left"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrow_right"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrow_up"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrowhead_down"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrowhead_left"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrowhead_right"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_arrowhead_up"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_asymmetric_network"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_audio_console"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_audio_equalizer"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_audio_knob2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_audio_volume_bars"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_audio_volume_slider"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_backup"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_backup_server"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_balance"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_ball_baseball"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_ball_basketball"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_ball_football2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_band_aid"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_bank_transaction"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_bell"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_black_list"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_black_list_folder"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_blur"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_bomb"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_book"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_bookmark"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_brightness"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_broadband"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_broken_link"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_broken_link2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_brush"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_brush_wide"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_bus"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_cabinet"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_calculator"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_calculator_buttons"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_calendar"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_calendar_month"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_calendar_year"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_camera"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_cancel"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_certificate1"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_certificate2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_chat_exclamation"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_checkmark"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_chroma_key"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_clapperboard"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_clip"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_clipboard"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_clock"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_close"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_cloud"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_coffee"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_color"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_connect2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_contract"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_contract2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_contrast"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_cookie"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_copy"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_copy2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_couple"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_crop"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_cross"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_currency_sign_dollar"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_currency_sign_euro"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_cutter"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_delete"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_diary"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_dimensions"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_disconnect2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_diskette"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_dispatch"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_dispatch_order"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_distribute_horizontal_center"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_distribute_horizontal_left"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_distribute_horizontal_right"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_distribute_vertical_bottom"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_distribute_vertical_center"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_distribute_vertical_top"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_document1"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_download"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_dropper"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_earphones"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_edit"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_envelope"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_envelope_open"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_eraser"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_eye_open"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_fax"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_file"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_file_transfer"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_file_transfer2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_fill"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_film_reel"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_flash"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_flip_horizontal"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_flip_vertical"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_flower"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_folder"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_frames"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_frames2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_gateway"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_gear"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_group"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hand_handshake"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hand_point"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hand_share"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hand_smudge"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hand_thumbsdown"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hand_thumbsup"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hard_disk2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_headset"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_heart"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_height"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_help"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_history2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_history3"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_home"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_hourglass"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_id"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_info"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_invoice"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_ip"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_key"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_lcd"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_lightbulb_off"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_lightbulb_on"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_link"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_link2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_list"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_list2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_location"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_lock"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_lock_open"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_mask"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_mastercard"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_match_width_and_height"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_messenger"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_microphone"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_midi_keyboard"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_money_bag_dollar"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_monitor"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_motion_blur"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_mouse"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_move"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_music_eighth_note"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_network_monitor"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_notepad"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_organizational_chart"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_osi_model"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_osi_model2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_palette"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_password"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_password2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_paste"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_paste2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_pen"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_pen_drive"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_pencil"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_photoshop"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_plane"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_polygon"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_pop-up"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_preview"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_preview2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_print"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_printer"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_product"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_progress_bar"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_protocol"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_protocol1"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_protocol2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_purchase"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_pyramid"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_random"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_red_cross"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_refresh"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_reload"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_repeat"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_resize"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_rotate"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_round"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_rounded_rectangle"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_router"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_ruler_square"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_salesman"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_scissors"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_screen_zoom_in"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_screen_zoom_out"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_secure_connection"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_security"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_send_container"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_send_crate"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_shopping_basket"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_shopping_cart"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_smiley"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_smiley_angry"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_smiley_confused"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_smiley_grin"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_smiley_in_love"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_smiley_sad"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_socket"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_spam"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_spam2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_speaker"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_speech_balloon"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_spiral"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_spray"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_spreadsheet"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_square"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_stamp"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_star"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_stats_bar_chart"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_stats_line_chart"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_stats_pie_chart"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_stop"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_sun"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_symmetric_network"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_technical_hammer"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_technical_screwdriver"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_technical_wrench"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_trash_can"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_treasure_chest"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_trojan"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_trojan2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_upload"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_usb"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_usb2"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_user"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_user_woman"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_visa"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_wave_amplify_amplitude"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_wave_high_frequency"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_white_list"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_white_list_folder"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_width"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_window"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_windows"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_wire_transfer"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_wizard"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_world"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_zoom"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_zoom_in"></span></a>
+									<a href="#" class="button with_icon24_notext"><span class="icon24_sprite i24_zoom_out"></span></a>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

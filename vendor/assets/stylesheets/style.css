@@ -146,6 +146,12 @@ sub {
 	margin-right: auto;
 	margin-bottom: 20px
 }
+.block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px
+}
 .relative {
 	position: relative
 }

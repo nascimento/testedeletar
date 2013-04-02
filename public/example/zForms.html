@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+			
+			
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title">Forms</div>						
+						<div class="inside">
+							<div class="in">
+							
+							<div class="clear"></div>
+							<a href="zHtmlstructure.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Html structure</a>
+							<a href="zColorpicker.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Color Picker</a>
+							<div class="clear"></div>
+							
+							<h4 class="docs_title_first">Introduction</h4>
+							
+							<p>Forms works with the technique provided by Fluid 960 Grid System. But, there is used and another custom grid system which is a child of 960gs. "Formee" - is a framework developed by three guys (Bernard De Luna, Daniel Araujo and Marcello Manso). But, this framework is not used "as is", it come with a lot of modifications. I've told you this, to be sure from where all come. </p><br />
+							
+							<p><strong>For a basic styling you must include this line between</strong> <code>&lt;head&gt;&lt;/head&gt;</code> <strong>tags:</strong></p>
+							
+							<pre>&lt;link rel="stylesheet" type="text/css" href="css/config.css" /></pre>
+							
+							<p><strong>NOTE:</strong> This file import all required styles for this template.</p> 
+							
+							<p>To create a form you must add <code>"formee"</code> class.</p><br />
+							
+							
+							<h5 class="docs_title">Basic Form example</h5>
+
+<pre>&lt;form class=<code>"formee"</code> action="#">
+	
+	 &lt;div class=<code>"grid-5-12"</code>>
+		&lt;label>Input field &lt;/label>
+		&lt;input type="text" />
+	&lt;/div>
+	
+	 &lt;div class=<code>"grid-7-12"</code>>
+		&lt;label>Input field 2 &lt;/label>
+		&lt;input type="text" />
+	&lt;/div>
+
+&lt;/form></pre>
+							
+							
+							<br />
+							
+							
+							<div class="docs_result"><span class="docsR_title">The result of the code above:</span>						
+								<form class="formee" action="#">
+		
+									<div class="grid-5-12">
+										<label>Input field </label>
+										<input type="text" />
+									</div>
+									
+									<div class="grid-7-12">
+										<label>Input field 2 </label>
+										<input type="text" />
+									</div>
+
+								</form><br/>
+							</div>
+							<div class="clear"></div>
+							
+							<h5 class="docs_title">Basic Select menu code example</h5>
+<pre>&lt;select data-placeholder="Please select one..." class="chzn-select" style="width:100%;" tabindex="1">
+	&lt;option value="">&lt;/option> 
+	&lt;option value="Option select 1">Option select 1&lt;/option>
+	&lt;option value="Option select 2">Option select 2&lt;/option>
+	&lt;option value="Option select 3">Option select 3&lt;/option>
+	&lt;option value="Option select 4">Option select 4&lt;/option>
+&lt;/select></pre><br />
+
+							<div class="docs_result"><span class="docsR_title">The result of the code above:</span>						
+																
+								
+								<form class="formee" action="#">
+									<div class="grid-4-12"></div>
+									<div class="grid-4-12">
+											<select data-placeholder="Please select one..." class="chzn-select" style="width:100%;" tabindex="1">
+												<option value=""></option> 
+												<option value="Option select 1">Option select 1</option>
+												<option value="Option select 2">Option select 2</option>
+												<option value="Option select 3">Option select 3</option>
+												<option value="Option select 4">Option select 4</option>
+											</select>
+									</div>
+									<div class="grid-4-12"></div>
+									<div class="clear"></div><br />
+								</form>
+		
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							
+								
+								<br />
+							<p>This require this line to be included between <code>head</code> tags:</p>
+							<pre>&lt;script type="text/javascript" src="js/global_plugins_scripts.js">&lt;/script></pre>
+							
+							<p>And, initialize the Chosen Plugin. The code bellow is included in <code>bottom_scripts.js</code>:</p>
+
+<pre>jQuery(".chzn-select").chosen();
+jQuery(".chzn-select-deselect").chosen({allow_single_deselect:true});
+</pre><br />
+
+							<strong>Available options:</strong>
+	
+<pre>jQuery(".chzn-select").chosen({
+	allow_single_deselect:true, // true or false. Allow to deselect a default option. In other words to reset the menu to 0.
+	no_results_text: "No results matched", // Set the text is there are no otions found.
+});</pre>
+									
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://harvesthq.github.com/chosen/" target="_blank">http://harvesthq.github.com/chosen/</a> - jQuery Chosen plugin official website. </li>
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							
+							<h4 class="docs_title">Form Attributes</h4>
+							
+							<p>I think you noticed, that this form use classes <code>"formee"</code>, <code>"grid-5-12"</code> and <code>"grid-7-12"</code>. So, the best is to explain every forms part.</p><br />
+							
+							
+								<div class="box">
+									<div class="title">Attributes:</div>								
+									<div class="inside">
+										<table cellpadding="0" cellspacing="0" border="0" class="display" id="datatable_1docs">
+											<thead>
+												<tr>
+													<th width="20%">ATTRIBUTE</th>
+													<th width="30%">EXAMPLE</th>
+													<th width="50%">DESCRIPTION</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+												<tr class="gradeA odd">
+													<td><code>"formee"</code></td>
+													<td><code>&lt;form class="formee" action="#"> ... &lt;form></code></td>
+													<td>General class which help to apply styles for every form element.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>"grid-$-12"</code></td>
+													<td><code>&lt;div class="grid-3-12"></code></td>
+													<td>How many (<strong>$</strong>) of 12 equal columns the container fills</td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>"formee-req"</code></td>
+													<td><code>&lt;span class="formee-req">*&lt;/span></code></td>
+													<td>This class is used to customize REQUIRED asterisk</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>"txt_autogrow"</code></td>
+													<td><code>&lt;textarea class="txt_autogrow"> ... &lt;/textarea></code></td>
+													<td>This class allow to change dinamicaly the height of <code>&lt;textarea></code></td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>"formee-list"</code></td>
+													<td><div class="grid_11">
+<pre>&lt;ul class="formee-list">
+	&lt;li>&lt;input name="01" type="checkbox" />
+	&lt;label>Text&lt;/label>&lt;/li>
+	&lt;li>&lt;input name="02" type="checkbox" />
+	&lt;label>Text&lt;/label>&lt;/li>
+	&lt;li>&lt;input name="03" type="checkbox" />
+	&lt;label>Text&lt;/label>&lt;/li>
+&lt;/ul></pre>
+													</div></td>
+													<td>This class allow to customize LIST of INPUT RADIO or CHECKBOX</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>data-placeholder="Text..."</code></td>
+													<td><div class="grid_11">
+<pre>&lt;select <code>data-placeholder="Choose a Country..."</code>
+   class="chzn-select">
+	&lt;option value="">&lt;/option> 
+	&lt;option value="US">United States&lt;/option> 
+	&lt;option value="UK">United Kingdom&lt;/option> 
+&lt;/select></pre>
+													</div></td>
+													<td><strong>This is typical for Chosen jQuery plugin.</strong> Chosen automatically sets the default field text ("Choose a country...") by reading the select element's data-placeholder value. If no data-placeholder value is present, it will default to "Select Some Option" or "Select Some Options" depending on whether the select is single or multiple. You can change these elements in the plugin js file as you see fit</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>"chzn-select"</code></td>
+													<td>
+<pre>&lt;select class="chzn-select"> ... &lt;/select></pre>
+													</td>
+													<td>Enable styles for HTML select menu and allow only selection.</td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>"chzn-select-deselect"</code></td>
+													<td>
+<pre>&lt;select class="chzn-select-deselect"> 
+	... 
+&lt;/select></pre>
+													</td>
+													<td>Enable styles for HTML select menu and allow to select and deselect an option.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>multiple</code></td>
+													<td>
+<pre>&lt;select class="chzn-select" multiple> 
+	... 
+&lt;/select></pre>
+													</td>
+													<td>Enable styles for HTML select menu and allow to select multiple options</td>
+												</tr>
+												
+												
+												<tr class="gradeA odd">
+													<td><code>style="width:100%;"</code></td>
+													<td>
+<pre>&lt;select class="chzn-select" style="width:100%;"> ... &lt;/select></pre>
+													</td>
+													<td>Select menu width. You can use <code>%</code> or <code>px</code></td>
+												</tr>
+												
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>ATTRIBUTE</th>
+													<th>EXAMPLE</th>
+													<th>DESCRIPTION</th>
+												</tr>
+											</tfoot>
+										</table>								
+										<div class="clear"></div>
+									</div>
+								</div>
+								
+								
+								<br />
+								<h4 class="docs_title_first">Form Validation</h4>
+								
+								<br />
+									<p><strong>This require these line to be included between <code>head</code> tags:</strong></p>
+<pre>&lt;script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js">&lt;/script>
+&lt;script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js">&lt;/script></pre>									
+								<br/>
+								<p>- First line loads the language</p>
+								<p>- Second line loads the plugin</p><br/>
+								
+								<p><strong>Also it require a initialization:</strong></p>
+<pre>jQuery(document).ready(function(){
+	jQuery("#form_id1").validationEngine('attach', {promptPosition : "bottomRight", autoPositionUpdate : true});
+});</pre><br />
+							<p><strong>NOTE:</strong> This code can be found in <code>head_scripts.js</code></p><br/>	
+							
+							<p>Next you must create the form, like with the same id like this used in initialization code. Form elements must have <span class="text-red">unique names and id's</span>.</p><br/>
+							
+<pre>&lt;form <code>id="form_id1"</code> class="formee"action="#">
+	
+	 &lt;div class="grid-5-12">
+		&lt;label>Input field &lt;/label>
+		&lt;input <code>class="validate[required]"</code> <code>name="field1"</code> <code>id="field1"</code> type="text" />
+	&lt;/div>
+	
+	 &lt;div class="grid-7-12">
+		&lt;label>Input field 2 &lt;/label>
+		&lt;input <code>class="validate[required,custom[email]]"</code> <code>name="field2"</code> <code>id="field2"</code> type="text" />
+	&lt;/div>
+
+&lt;/form></pre><br />
+							
+							<div class="docs_result"><span class="docsR_title">The result of the code above:</span>						
+								<form id="form_id1" class="formee" action="#">
+		
+									<div class="grid-5-12">
+										<label>Input field </label>
+										<input class="validate[required]" name="field1" id="field1" type="text" />
+									</div>
+									
+									<div class="grid-7-12">
+										<label>Input field 2 </label>
+										<input class="validate[required,custom[email]]" name="field2" id="field2" type="text" />
+									</div>
+
+								</form><br/>
+							</div>
+							<div class="clear"></div>
+							
+							
+								<div class="box">
+									<div class="title">Attributes:</div>								
+									<div class="inside">
+										<table cellpadding="0" cellspacing="0" border="0" class="display" id="datatable_2docs">
+											<thead>
+												<tr>
+													<th width="35%">ATTRIBUTE</th>
+													<th width="65%">DESCRIPTION</th>
+												</tr>
+											</thead>
+											<tbody>
+											
+												<tr class="gradeX odd">
+													<td><code>class="validate[required]"</code></td>
+													<td>Default validation. You can type anything. If the field is empty will return an error message.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[url]]"</code></td>
+													<td>URL begin with <code>http://</code> <code>https://</code> or <code>ftp://</code></td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[email]]"</code></td>
+													<td>Email validation. Example: <code>webmaster@domain.com</code></td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[ipv4]]"</code></td>
+													<td>IP adress validation. Example: <code>192.168.3.25</code></td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[date]]"</code></td>
+													<td>Validate date. Example: <code>2012-01-17</code></td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[number]]"</code></td>
+													<td>Number validation. A signed floating number. Example: <code>-3849.354</code>, <code>38.00</code>, <code>38</code>, <code>.77</code></td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[integer]]"</code></td>
+													<td>Validate Integer. An signed integer. Example: <code>+34</code>, <code>34</code> or <code>-34</code></td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[onlyLetterNumber]]"</code></td>
+													<td>Only Letters &amp; Numbers. Admissible only <code>0-9</code>, <code>a-z</code>, <code>A-Z</code></td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[onlyNumberSp]]"</code></td>
+													<td>Only Numbers (char). Admissible only <code>0-9</code> and space.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[onlyLetterSp]]"</code></td>
+													<td>Only Letters. Only ASCII letters, space and <code>'</code></td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,minSize[6]]"</code></td>
+													<td>Minimum charaters allowed. Here are <code>6</code>.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,maxSize[6]]"</code></td>
+													<td>Maximum charaters allowed. Here are <code>6</code>.</td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[integer],min[-5]]"</code></td>
+													<td>Minimum integer value allowed. Here is <code>-5</code>.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[integer],max[50]]"</code></td>
+													<td>Maximum integer value allowed. Here is <code>50</code>.</td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[custom[date],past[2012-01-01]]"</code></td>
+													<td>Checks that the value is a date in the past. You must enter a date ealier than <code>2012-01-01</code></td>
+												</tr>												
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[custom[date],future[NOW]]"</code></td>
+													<td>Checks that the value is a date in the future. You must enter a date older than today's date</td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[username]]"</code></td>
+													<td>Checks . Admissible only <code>0-9</code>, <code>a-z</code>, <code>A-Z</code></td>
+												</tr>												
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[firstName]]"</code></td>
+													<td>Checks if the username is valid. Only letters accepted <code>a-z</code>, <code>A-Z</code>.</td>
+												</tr>
+												
+												<tr class="gradeA odd">
+													<td><code>class="validate[required,custom[lastName]]"</code></td>
+													<td>Checks if the username is valid. Only letters accepted <code>a-z</code>, <code>A-Z</code>.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td><code>class="validate[required,custom[passwordLogin]]"</code></td>
+													<td>Password validation. Allowed any character.</td>
+												</tr>
+												
+												<tr class="gradeA even">
+													<td>
+														(1) <code>class="validate[required]"</code><br/>
+														(2) <code>class="validate[required,equals[password]]"</code>
+													</td>
+													<td>(1) First field.<br />(2) Second field.<br />Password validation for a registration form. Checks if fields have the same value. Allowed any character.</td>
+												</tr>
+												
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>ATTRIBUTE</th>
+													<th>DESCRIPTION</th>
+												</tr>
+											</tfoot>
+										</table>								
+										<div class="clear"></div>
+									</div>
+								</div>
+							
+							
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://www.position-absolute.com/articles/jquery-form-validator-because-form-validation-is-a-mess/" target="_blank">http://www.position-absolute.com/articles/jquery-form-validator-because-form-validation-is-a-mess/</a> - Validation plugin official website. </li>
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							
+							<div class="clear"></div>
+							<br />
+							<a href="zHtmlstructure.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Html structure</a>
+							<a href="zColorpicker.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Color Picker</a>
+							<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

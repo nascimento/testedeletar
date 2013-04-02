@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_dropper"></span>Color Picker</div>
+						<div class="inside">
+							<div class="in">
+								<form class="formee" action="#">
+									<section class="grid_12">
+									
+										<div class="grid-3-12"><label>Flat Mode </label></div>
+										<div class="grid-9-12">
+											<div id="colorpickerHolder" class="flat_colorpicker"> </div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Attached to an text field </label></div>
+										<div class="grid-3-12"><input type="text" id="colorpickerField1" value="00ff00" /></div>
+										<div class="grid-3-12"><input type="text" id="colorpickerField3" value="0000ff" /></div>
+										<div class="grid-3-12"><input type="text" id="colorpickerField2" value="ff0000" /></div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										
+										<div class="grid-3-12"><label>Attached to a div </label></div>
+										<div class="grid-3-12">
+											<div id="colorSelector" class="color_p1"><div style="background-color: #0000ff"></div></div>
+										</div>
+										<div class="clear"></div>
+										
+										<!-- ====================== -->
+										
+										
+									</section>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_calendar_month"></span>Date Picker</div>
+						<div class="inside">
+							<div class="in">
+								<form class="formee" action="#">
+									<section class="grid_12">
+									
+										<div class="grid-3-12"><label>DatePicker </label></div>
+										<div class="grid-9-12"><input type="text" id="datepicker" class="sizew200"></div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Multiple DatePicker </label></div>
+										<div class="grid-9-12"><input type="text" id="multiple_datepicker" class="sizew200"></div>
+										<div class="clear"></div>
+										<hr />
+																				
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Range DatePicker </label></div>
+										<div class="grid-3-12">
+											<label>From </label>
+											<input type="text" id="datepicker_from">
+										</div>
+										<div class="grid-3-12">
+											<label>To </label>
+											<input type="text" id="datepicker_to">
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Inline DatePicker </label></div>
+										<div class="grid-9-12"><div id="datepicker2"></div></div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+									</section>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_audio_equalizer"></span>Sliders</div>
+						<div class="inside">
+							<div class="in">
+								<form class="formee" action="#">
+									<section class="grid_12">
+										<div class="grid-3-12"><label>Simple slider:</label></div>
+										<div class="grid-9-12">
+											<div class="elem_ui">
+												<div id="simple_slider" class="simple_slider"></div>
+											</div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										
+										<div class="grid-3-12"><label>Snap to increments:</label></div>
+										<div class="grid-9-12">
+											<p>
+												<input type="text" id="amount_increments" class="slider_value" />
+											</p>
+											<div class="clear"></div>
+											<div id="slider_snap_increments"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+																				
+										
+										<div class="grid-3-12"><label>Range slider:</label></div>
+										<div class="grid-9-12">
+											<p>
+												<input type="text" id="range_amount" class="slider_value" />
+											</p>
+											<div class="clear"></div>
+											<div id="slider-range"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										
+										<div class="grid-3-12"><label>Slider Range Minimum:</label>
+										</div>
+										<div class="grid-9-12">
+											<p>
+												<input type="text" id="range_amount_min" class="slider_value" />
+											</p>
+											<div class="clear"></div>
+											<div id="slider-range-min"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										
+										<div class="grid-3-12"><label>Multiple Vertical Slider:</label></div>
+										<div class="grid-9-12">
+											<div id="multiple_vertical_slider">
+												<span>88</span>
+												<span>77</span>
+												<span>55</span>
+												<span>33</span>
+												<span>44</span>
+												<span>55</span>
+												<span>66</span>
+												<span>77</span>
+												<span>88</span>
+												<span>66</span>
+												<span>44</span>
+											</div>
+										</div>
+										<div class="clear"></div>
+										
+										<!-- ====================== -->
+																				
+									</section>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+								
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_progress_bar"></span>Progress bar</div>
+						<div class="inside">
+							<div class="in">
+								<form class="formee" action="#">
+								
+									<section class="grid_12">
+										
+										<div class="grid-3-12"><label>Time and percent count</label></div>
+										<div class="grid-9-12">
+											<div id="progress1" class="pbar_blue">
+												<div class="percent"></div>
+												<div class="pbar"></div>
+												<div class="elapsed"></div>
+											</div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										
+										<div class="grid-3-12"><label>Delay on start</label></div>
+										<div class="grid-9-12">
+											<div id="progress2" class="pbar_blue">
+												<div class="percent"></div>
+												<div class="pbar"></div>
+												<div class="elapsed"></div>
+											</div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>1 sec. Interval</label></div>
+										<div class="grid-9-12">
+											<div id="progress3">
+												<div class="percent"></div>
+												<div class="pbar pbar_blue"></div>
+												<div class="elapsed"></div>
+											</div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Progress Bar Orange</label></div>
+										<div class="grid-9-12">
+											<div id="progressbar" class="pbar_orange"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Progress Bar Blue </label></div>
+										<div class="grid-9-12">
+											<div id="progressbar2" class="pbar_blue"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Progress Bar green </label></div>
+										<div class="grid-9-12">
+											<div id="progressbar3" class="pbar_green"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Progress Bar Black </label></div>
+										<div class="grid-9-12">
+											<div id="progressbar4" class="pbar_black"></div>
+										</div>
+										<div class="clear"></div>
+										<hr />
+										
+										<!-- ====================== -->
+										
+										<div class="grid-3-12"><label>Progress Bar Red </label></div>
+										<div class="grid-9-12">
+											<div id="progressbar5" class="pbar_red"></div>
+										</div>
+										<div class="clear"></div>
+										
+										<!-- ====================== -->
+										
+										
+									</section>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+			
+				<!-- ======= .grid_6 - block begin ======= -->
+				<section class="grid_6">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_frames"></span>Pagination</div>						
+						<div class="inside">
+							<div class="in">
+								
+								<!-- Default style -->
+								<div class="pagination">
+									<a href="#none" class="disabled">Prev</a>
+									<a href="#none" class="current">1</a>
+									<a href="#none">2</a>
+									<a href="#none">3</a>
+									<a href="#none">4</a>
+									<a href="#none">5</a>
+									<a href="#none">6</a>
+									<a href="#none">Next</a>
+								</div>
+								<div class="clear"></div>
+								
+								
+								<!-- Green style -->
+								<div class="pagination green_pag">
+									<a href="#none" class="disabled">Prev</a>
+									<a href="#none" class="current">1</a>
+									<a href="#none">2</a>
+									<a href="#none">3</a>
+									<a href="#none">4</a>
+									<a href="#none">5</a>
+									<a href="#none">6</a>
+									<a href="#none">Next</a>
+								</div>
+								<div class="clear"></div>
+								
+								
+								<!-- Blue style -->
+								<div class="pagination blue_pag">
+									<a href="#none" class="disabled">Prev</a>
+									<a href="#none" class="current">1</a>
+									<a href="#none">2</a>
+									<a href="#none">3</a>
+									<a href="#none">4</a>
+									<a href="#none">5</a>
+									<a href="#none">6</a>
+									<a href="#none">Next</a>
+								</div>
+								<div class="clear"></div>
+								
+								
+								<!-- Black style -->
+								<div class="pagination black_pag">
+									<a href="#none" class="disabled">Prev</a>
+									<a href="#none" class="current">1</a>
+									<a href="#none">2</a>
+									<a href="#none">3</a>
+									<a href="#none">4</a>
+									<a href="#none">5</a>
+									<a href="#none">6</a>
+									<a href="#none">Next</a>
+								</div>
+								<div class="clear"></div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ======= .grid_6 - block end ======= -->
+				
+			
+				<!-- ======= .grid_6 - block begin ======= -->
+				<section class="grid_6">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_reload"></span>Loaders</div>				
+						<div class="inside">
+							<div class="in">
+								
+								<img src="images/loader/1.gif" alt="" />
+								<img src="images/loader/2.gif" alt="" />
+								<img src="images/loader/3.gif" alt="" />
+								<img src="images/loader/4.gif" alt="" />
+								<img src="images/loader/5.gif" alt="" />
+								<img src="images/loader/6.gif" alt="" />
+								<img src="images/loader/7.gif" alt="" />
+								<img src="images/loader/8.gif" alt="" />
+								<img src="images/loader/9.gif" alt="" />
+								<img src="images/loader/10.gif" alt="" />
+								<img src="images/loader/11.gif" alt="" />
+								<img src="images/loader/12.gif" alt="" />
+								<img src="images/loader/13.gif" alt="" />
+								<img src="images/loader/14.gif" alt="" />
+								<img src="images/loader/15.gif" alt="" />
+								<img src="images/loader/16.gif" alt="" />
+								<img src="images/loader/17.gif" alt="" />
+								<img src="images/loader/18.gif" alt="" />
+								<img src="images/loader/19.gif" alt="" />
+								<img src="images/loader/20.gif" alt="" />
+								<img src="images/loader/21.gif" alt="" />
+								<img src="images/loader/22.gif" alt="" />
+								<img src="images/loader/23.gif" alt="" />
+								<img src="images/loader/24.gif" alt="" />
+								<img src="images/loader/25.gif" alt="" />
+								<img src="images/loader/26.gif" alt="" />
+								<img src="images/loader/27.gif" alt="" />
+								<img src="images/loader/28.gif" alt="" />
+								<img src="images/loader/29.gif" alt="" />
+								<img src="images/loader/30.gif" alt="" />
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_6 - block end ======= -->
+				
+				
+				
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_calculator_buttons"></span>Tooltips</div>
+						
+						<div class="inside">
+							<div class="in">
+								<div class="display">
+										<div class="grid_9">
+										
+											<button class="tip-left" title="Tooltip left">Tooltip</button>
+											
+											<button class="tip-top" title="Tooltip top">Tooltip</button>
+											
+											<button class="tip-bottom" title="Tooltip bottom">Tooltip</button>
+											
+											<button class="tip-right" title="Tooltip right">Tooltip</button>
+											
+											<button class="tip-lefttop" title="Tooltip left top">Tooltip</button>
+									
+											<button class="tip-leftbottom" title="Tooltip left bottom">Tooltip</button>
+									
+											<button class="tip-righttop" title="Tooltip right top">Tooltip</button>
+									
+											<button class="tip-rightbottom" title="Tooltip right bottom">Tooltip</button>
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_calculator_buttons"></span>Buttons</div>
+						
+						<div class="inside">
+							<div class="in">
+								<div class="display">
+									<div class="box_row first">
+										<div class="grid_3 text_elem">Default</div>
+										<div class="grid_9">
+											<a href="#" class="button" title=".button">Button</a>
+										</div>
+										<div class="clear"></div>
+									</div>
+									
+									<!-- ====================== -->
+									
+									<div class="box_row">
+										<div class="grid_3 text_elem">Other colors</div>
+										<div class="grid_9">
+											<a href="#" class="button blue">Button</a>
+											<a href="#" class="button green">Button</a>
+											<a href="#" class="button red">Button</a>
+											<a href="#" class="button orange">Button</a>
+											<a href="#" class="button lightblue">Button</a>
+											<a href="#" class="button darkblue">Button</a>
+											<a href="#" class="button blue2">Button</a>
+											<a href="#" class="button gray">Button</a>
+											<a href="#" class="button yellow">Button</a>
+											<a href="#" class="button darkred">Button</a>
+											<a href="#" class="button pink">Button</a>
+											<a href="#" class="button limegreen">Button</a>
+											<a href="#" class="button saddlebrown">Button</a>
+											<a href="#" class="button black">Button</a>
+											<a href="#" class="button purple">Button</a>
+											<a href="#" class="button darkgray">Button</a>
+											<a href="#" class="button silver">Button</a>
+										</div>
+										<div class="clear"></div>
+									</div>
+									
+									<!-- ====================== -->
+									
+									<div class="box_row">
+										<div class="grid_3 text_elem">Small size</div>
+										<div class="grid_9 text_elem">
+											<a href="#" class="button blue small">Button</a>
+											<a href="#" class="button green small">Button</a>
+											<a href="#" class="button red small">Button</a>
+											<a href="#" class="button orange small">Button</a>
+										</div>
+										<div class="clear"></div>
+									</div>
+									
+									<!-- ====================== -->
+									
+									<div class="box_row">
+										<div class="grid_3 text_elem">Rounded corner</div>
+										<div class="grid_9">
+											<a href="#" class="button blue round">Button</a>
+											<a href="#" class="button green round">Button</a>
+											<a href="#" class="button red round">Button</a>
+											<a href="#" class="button orange round">Button</a>
+										</div>
+										<div class="clear"></div>
+									</div>
+									
+									<!-- ====================== -->
+									
+									
+									<div class="box_row">
+										<div class="grid_3 text_elem">Defaults</div>
+										<div class="grid_9">
+											<input type="submit" value="Submit" title='type="submit"' />
+											<input type="reset" value="Reset" title='type="reset"' />
+											<input type="button" value="Input Button" title='type="button"' />
+											<button type="submit" title='button type="submit"...'>Button</button>
+											<button type="submit" disabled="disabled" title='button type="submit" disabled="disabled"...'>Disabled</button>
+										</div>
+										<div class="clear"></div>
+									</div>
+									
+									<!-- ====================== -->
+									
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_pop-up"></span>Fallr Dialogs</div>
+						
+						<div class="inside">
+							<div class="in">
+								<div class="display">
+								
+									<section class="grid_6">
+										<div class="box_row first">
+											<div class="grid_6 text_elem">Alert like</div>
+											<div class="grid_6"><a href="#fallr-alertlike" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Prompt-like</div>
+											<div class="grid_6"><a href="#fallr-promptlike" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Coming from below</div>
+											<div class="grid_6"><a href="#fallr-below" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Centered</div>
+											<div class="grid_6"><a href="#fallr-middle" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Forms</div>
+											<div class="grid_6"><a href="#fallr-forms" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Close with ESC</div>
+											<div class="grid_6"><a href="#fallr-close" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row last">
+											<div class="grid_6 text_elem">Fullscreen</div>
+											<div class="grid_6"><a href="#fallr-fullsize" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										
+									</section>
+									
+									<section class="grid_6">
+									
+									
+										<div class="box_row first">
+											<div class="grid_6 text_elem">Without Overlay</div>
+											<div class="grid_6"><a href="#fallr-nooverlay" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+									
+										<div class="box_row first">
+											<div class="grid_6 text_elem">Confirm-like</div>
+											<div class="grid_6"><a href="#fallr-confirmlike" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Multiple choices</div>
+											<div class="grid_6"><a href="#fallr-multiplechoices" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Callback</div>
+											<div class="grid_6"><a href="#fallr-callback" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Custom size</div>
+											<div class="grid_6"><a href="#fallr-autoresize" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Autoclose</div>
+											<div class="grid_6"><a href="#fallr-autoclose" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row last">
+											<div class="grid_6 text_elem">Special Effects</div>
+											<div class="grid_6"><a href="#fallr-effect" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										
+									</section>
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<!-- ======= .grid_12 - block end ======= -->
+								
+								
+								
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_hand_point"></span>Toast Messages</div>
+						
+						<div class="inside">
+							<div class="in">
+								<div class="display">
+								
+									<section class="grid_6">
+									
+										<div class="box_row first">
+											<div class="grid_6 text_elem">Success Autoclose</div>
+											<div class="grid_6"><a href="javascript:showSuccessToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Notice Autoclose</div>
+											<div class="grid_6"><a href="javascript:showNoticeToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Warning Autoclose</div>
+											<div class="grid_6"><a href="javascript:showWarningToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Error Autoclose</div>
+											<div class="grid_6"><a href="javascript:showErrorToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->										
+										
+									</section>
+									
+									<section class="grid_6">
+																	
+										<div class="box_row first">
+											<div class="grid_6 text_elem">Success sticky</div>
+											<div class="grid_6"><a href="javascript:showStickySuccessToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+									
+										<div class="box_row first">
+											<div class="grid_6 text_elem">Notice sticky</div>
+											<div class="grid_6"><a href="javascript:showStickyNoticeToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Warning sticky</div>
+											<div class="grid_6"><a href="javascript:showStickyWarningToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+										
+										<div class="box_row">
+											<div class="grid_6 text_elem">Error sticky</div>
+											<div class="grid_6"><a href="javascript:showStickyErrorToast();" class="button">Click me</a></div>
+											<div class="clear"></div>
+										</div>
+										
+										<!-- ====================== -->
+																				
+									</section>
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><span class="icon16_sprite i_cancel"></span>Basic Alert messages</div>
+						
+						<div class="inside">
+							<div class="small_alert info"><strong>Info: </strong>This is an informative message.</div>
+							<div class="small_alert succes"><strong>Succes: </strong>Your message was added successfully and is awaiting for approval.</div>
+							<div class="small_alert error"><strong>Error: </strong>Uhh, here is a critical error in <strong>functions.php</strong> on line 274.</div>
+							<div class="small_alert atention"><strong>Atention: </strong>Hey, editing of this file may harm the server!</div>
+						
+							<div class="in">
+								<div class="alert info_msg "><strong>Info: </strong>This is an informative message.</div>
+								<div class="alert error_msg"><strong>Error: </strong>Uhh, here is a critical error in <strong>functions.php</strong> on line 274.</div>
+								<div class="alert succes_msg"><strong>Succes: </strong>Your message was added successfully and is awaiting for approval.</div>
+								<div class="alert saved_msg"><strong>Saved: </strong>Your personal settings were saved..</div>	
+								<div class="alert exclamation_msg"><strong>Exclamation: </strong>Attention, editing of this file may harm the server.</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

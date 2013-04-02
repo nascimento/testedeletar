@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+			
+			
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><div class="layout">Slider</div></div>						
+						<div class="inside">
+							<div class="in">
+							
+							<div class="clear"></div>
+							<a href="zDatepicker.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Date Picker</a>
+							<a href="zProgressbar.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Progress bar</a>
+							<div class="clear"></div>
+							
+							<h4 class="docs_title_first">Slider</h4>
+							The basic slider is horizontal and has a single handle that can be moved with the mouse or by using the arrow keys.</p>
+							<p><strong>How to create a Slider?</strong></p>
+							<p><strong>1. Initialize the plugin</strong></p>
+<pre>jQuery(function() {
+	jQuery( "#simple_slider" ).slider();
+});</pre><br />
+							<strong>2. Attach it to a DIV using the ID <code>"simple_slider"</code></strong> <em>(for this example)</em><br /><br />
+                            
+                            <pre>&lt;div id="simple_slider">&lt;/div></pre><br />
+							
+							<div class="docs_result"><span class="docsR_title">The result of the code above:</span>						
+								<form class="formee" action="#">
+		
+									<div class="grid-12-12">
+										<div id="simple_slider" ></div>
+									</div>
+									
+									<div class="clear"></div>
+								</form><br/>
+							</div>
+							<div class="clear"></div>
+							
+							
+							
+							<p><strong>Another example</strong></p>
+							<p><strong>1. Initialize the plugin</strong></p>
+<pre>jQuery(function() {
+	jQuery( "#slider-range" ).slider({
+		range: true,
+		min: 0,
+		max: 500,
+		values: [ 75, 300 ],
+		slide: function( event, ui ) {
+			jQuery( "#range_amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+		}
+	});
+	jQuery( "#range_amount" ).val( "$" + jQuery( "#slider-range" ).slider( "values", 0 ) +
+		" - $" + jQuery( "#slider-range" ).slider( "values", 1 ) );
+});</pre><br />
+							<strong>2. Attach it to a DIV using the ID <code>"slider-range"</code> and create an text input wi ID <code>range_amount</code> to display the value</strong> <em>(for this example)</em><br /><br />
+                            
+<pre>&lt;p>
+	&lt;span class="slider_label">Range:&lt;/span>
+	&lt;input type="text" id="range_amount" class="slider_value" />
+&lt;/p>
+&lt;div class="clear">&lt;/div>
+&lt;div id="slider-range">&lt;/div></pre><br />
+							
+							<div class="docs_result"><span class="docsR_title">The result of the code above:</span>						
+								<form class="formee" action="#">
+		
+									<div class="grid-12-12">
+										<p>
+											<span class="slider_label">Range:</span>
+											<input type="text" id="range_amount" class="slider_value" />
+										</p>
+										<div class="clear"></div>
+										<div id="slider-range"></div>
+									</div>
+									
+									<div class="clear"></div>
+								</form><br/>
+							</div>
+							<div class="clear"></div>
+							
+							
+							
+							<div class="box">
+								<div class="title">Main Options</div>								
+								<div class="inside">
+									<table cellpadding="0" cellspacing="0" border="0" class="display" id="datatable_1docs">
+										<thead>
+											<tr>
+												<th width="15%">OPTION</th>
+												<th width="15%">TYPE</th>
+												<th width="15%">DEFAULT</th>
+												<th width="65%">DESCRIPTION</th>
+											</tr>
+										</thead>
+										<tbody>
+										
+											<tr class="gradeA odd">
+												<td><code>disabled</code></td>  <td><code>Boolean</code></td>  <td><code>false</code></td>
+												<td> Disables (true) or enables (false) the slider. Can be set when initialising (first creating) the slider. </td>
+											</tr>
+											
+											<tr class="gradeA even">
+												<td><code>animate</code></td>  <td><code>Boolean</code>, <code>String</code>, <code>Number</code></td>  <td><code>false</code></td>
+												<td> Whether to slide handle smoothly when user click outside handle on the bar. Will also accept a string representing one of the three predefined speeds (<code>"slow"</code>, <code>"normal"</code>, or <code>"fast"</code>) or the number of milliseconds to run the animation (e.g. <code>1000</code>). </td>
+											</tr>
+											
+											<tr class="gradeA odd">
+												<td><code>max</code></td>  <td><code>Number</code></td>  <td><code>100</code></td>
+												<td> The maximum value of the slider. </td>
+											</tr>
+											
+											<tr class="gradeA even">
+												<td><code>min</code></td>  <td><code>Number</code></td>  <td><code>0</code></td>
+												<td> The minimum value of the slider. </td>
+											</tr>
+											
+											<tr class="gradeA odd">
+												<td><code>orientation</code></td>  <td><code>String</code></td>  <td><code>"horizontal"</code></td>
+												<td> This option determines whether the slider has the min at the left, the max at the right or the min at the bottom, the max at the top. Possible values: <code>'horizontal'</code>, <code>'vertical'</code>. </td>
+											</tr>
+											
+											<tr class="gradeA even">
+												<td><code>range</code></td>  <td><code>Boolean</code>,<code>String</code></td>  <td><code>false</code></td>
+												<td> If set to true, the slider will detect if you have two handles and create a stylable range element between these two. Two other possible values are 'min' and 'max'. A min range goes from the slider min to one handle. A max range goes from one handle to the slider max. </td>
+											</tr>
+											
+											<tr class="gradeA odd">
+												<td><code>step</code></td>  <td><code>Number</code></td>  <td><code>1</code></td>
+												<td> Determines the size or amount of each interval or step the slider takes between min and max. The full specified value range of the slider (max - min) needs to be evenly divisible by the step. </td>
+											</tr>
+											
+											<tr class="gradeA even">
+												<td><code>value</code></td>  <td><code>Number</code></td>  <td><code>0</code></td>
+												<td> Determines the value of the slider, if there's only one handle. If there is more than one handle, determines the value of the first handle. </td>
+											</tr>
+											
+											<tr class="gradeA odd">
+												<td><code>values</code></td>  <td><code>Array</code></td>  <td><code>2</code></td>
+												<td> This option can be used to specify multiple handles. If <code>range</code> is set to true, the length of 'values' should be <code>2</code>. </td>
+											</tr>
+											
+																						
+											
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>OPTION</th>
+												<th>TYPE</th>
+												<th>DEFAULT</th>
+												<th>DESCRIPTION</th>
+											</tr>
+										</tfoot>
+									</table>								
+									<div class="clear"></div>
+								</div>
+							</div>
+							
+							
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://jqueryui.com/demos/slider/" target="_blank">http://jqueryui.com/demos/slider/</a> - Slider plugin official website. For more options and examples, please follow this link. </li>
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							
+							<div class="clear"></div>
+							<a href="zDatepicker.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Date Picker</a>
+							<a href="zProgressbar.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Progress bar</a>
+							<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

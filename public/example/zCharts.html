@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <title>Dulcet - Admin Theme </title>
+		
+		<!-- ==================================================================================== 
+			STYLES BEGIN 
+		===================================================================================== -->
+		
+		<!-- Global styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/config.css" />
+
+		<!-- Plugin configuration (styles) -->
+		<link rel="stylesheet" href="css/plugin_config.css" />
+		
+		<!--[if IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+		
+		<!-- ======================================================================================
+			SCRIPTS BEGIN
+		======================================================================================= -->
+        
+	<!-- = Global Scripts [required for template] 
+		***************************************************************************************-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/global_plugins_scripts.js"></script>
+		
+		
+		
+	<!-- = From Plugins Dir 
+		***************************************************************************************-->
+		
+		<script type="text/javascript" src="plugins/lightbox/js/lightbox/jquery.lightbox.min.js"></script>
+		<script type="text/javascript" src="plugins/jqueryui/all/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/languages/jquery.validationEngine-en.js"></script>
+		<script type="text/javascript" src="plugins/validator/js/jquery.validationEngine.js"></script>
+		<script type="text/javascript" src="plugins/dialogs/jquery-fallr-1.2.js"></script>
+		<script type="text/javascript" src="plugins/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+		<script type="text/javascript" src="plugins/spin/jquery-spin.js"></script>
+		<script type="text/javascript" src="plugins/qtip/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/browserplus-min.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/plupload.full.js"></script>
+		<script type="text/javascript" src="plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+		<script type="text/javascript" src="plugins/multiselect/js/ui.multiselect.js"></script>			
+		<script type="text/javascript" src="plugins/datatables/media/js/jquery.dataTables.js"></script>	
+		<script type="text/javascript" src="plugins/alerts/javascript/jquery.toastmessage.js"></script>	
+		<script type="text/javascript" src="plugins/prettify/prettify.js"></script>
+		<script type="text/javascript" src="plugins/fullcalendar/fullcalendar.min.js"></script>
+				
+		<script type="text/javascript" src="plugins/fileexplorer/js/elfinder.min.js"></script>	
+		<!--<script src="plugins/fileexplorer/js/i18n/elfinder.ru.js" type="text/javascript" charset="utf-8"></script>-->	
+		
+		<!-- Flotr2 Charts -->
+		<script type="text/javascript" src="plugins/flotr2/flotr2.min.js"></script>
+		<!--[if IE 8]><script type="text/javascript" src="plugins/flotr2/flotr2.ie.min.js"></script><![endif]-->
+		
+		<!-- color picker -->
+		<script type="text/javascript" src="plugins/colorpicker/js/colorpicker.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/eye.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/utils.js"></script>
+		<script type="text/javascript" src="plugins/colorpicker/js/layout.js"></script>
+		
+		
+		
+	<!-- = From JS Dir
+		****************************************************************************************-->
+		
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.autogrowtextarea.js"></script>
+		<script type="text/javascript" src="js/jquery.autotab-1.1b.js"></script>
+		
+		<!-- From JS Dir [plugin initialization] -->
+		<script type="text/javascript" src="js/dialog_fallr_init.js"></script>
+		<script type="text/javascript" src="js/tiny_mce_init.js"></script>
+		<script type="text/javascript" src="js/datatables_init.js"></script>
+		<script type="text/javascript" src="js/head_scripts.js"></script>
+				
+		
+    </head>
+    <body>
+				
+		<section id="layout">
+		
+			<div class="logo_profile container_12">
+				<div class="grid_6 logo_img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="grid_6 profile_meta">
+					<div class="user_meta">
+						<div>
+							<img src="images/smartik.jpg" alt="" />
+						</div>
+						<div class="name">
+							Welcome Smartik <br />
+							<a href="#" class="submeta">Profile</a>
+							<a href="#" class="submeta">Logout</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="clear"></div>
+			</div>
+	
+			<section id="top">
+					
+				<section id="top_bar">						
+					<section id="main_menu">
+						<ul class="sf-menu">
+							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="#">Elements</a>
+								<ul>
+									<li><a href="form_elements.html">Form elements</a></li>
+									<li><a href="user_interface.html">User Interface</a></li>
+									<li><a href="generic_icons.html">Generic icons</a></li>
+									<li><a href="tabs_accordion.html">Tabs Accordion</a></li>
+									<li><a href="grid.html">Template grid</a></li>
+									<li><a href="#">Another menu level</a>
+										<ul>
+											<li><a href="#">Lorem ipsum</a></li>
+											<li><a href="#">Dolor sit amet</a></li>
+											<li><a href="#">Aenean molestie</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Plugins</a>
+								<ul>
+									<li><a href="charts.html">Charts</a></li>
+									<li><a href="datatables.html">Data tables</a></li>
+									<li><a href="syntax_highlight.html">Syntax Highlighter</a></li>
+									<li><a href="form_plugins.html">Form specific plugins</a></li>
+									<li><a href="file_explorer.html">File explorer</a></li>
+									<li><a href="full_calendar.html">Full calendar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallery example</a>
+								<ul>
+									<li><a href="gallery.html">Gallery 1</a></li>
+									<li><a href="gallery2.html">Gallery 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Documentation</a>
+								<ul>
+									<li><a href="zHtmlstructure.html">HTML Structure</a></li>
+									<li><a href="zForms.html">Forms Structure</a></li>
+									<li><a href="zColorpicker.html">Color Picker</a></li>									
+									<li><a href="zDatepicker.html">Date Picker</a></li>									
+									<li><a href="zSlider.html">Slider</a></li>									
+									<li><a href="zProgressbar.html">Progress Bar</a></li>						
+									<li><a href="zTabs.html">Tabs</a></li>		
+									<li><a href="zAccordion.html">Accordion</a></li>		
+									<li><a href="zCharts.html">Charts( Flotr2 )</a></li>	
+									<li><a href="zDataTables.html">Data Tables</a></li>
+									<li><a href="zFileExplorer.html">File Explorer( elFinder )</a></li>
+									<li><a href="zDialogsAlerts.html">Dialogs &amp; Alerts</a></li>
+									<li><a href="zRequirements.html">Requirements</a></li>
+								</ul>
+							</li>
+						</ul>							
+					<div class="clear"></div>
+					</section><!-- End of #main_menu -->
+				</section><!-- End of #top_bar -->
+				<div class="clear"></div>
+				
+				<section class="top_in">	
+					<section id="second_top_bar">
+						<div id="quick_task" class="jThumbnailScroller">
+							<div class="jTscrollerContainer">
+							<div class="clear"></div>
+								<ul class="jTscroller">
+									<li><a href="#"><span class="icon1"></span>Dashboard</a></li>
+									<li><a href="#"><span class="icon2"></span>Forms</a></li>
+									<li><a href="#"><span class="icon3"></span>Charts</a></li>
+									<li><a href="#"><span class="icon4"></span>Organizer</a></li>
+									<li><a href="#"><span class="icon5"></span>Settings</a></li>
+									<li><a href="#"><span class="icon7"></span>Tables</a></li>
+									<li><a href="#"><span class="icon6"></span>Contacts</a></li>
+									<li><a href="#"><span class="icon8"></span>File explorer</a></li>
+									<li><a href="#"><span class="icon9"></span>Users</a></li>
+									<li><a href="#"><span class="icon10"></span>Upload</a></li>
+									<li><a href="#"><span class="icon13"></span>Download</a></li>
+									<li><a href="#"><span class="icon11"></span>Plus</a></li>
+									<li><a href="#"><span class="icon12"></span>Add product</a></li>
+									<li><a href="#"><span class="icon14"></span>Photos</a></li>
+									<li><a href="#"><span class="icon15"></span>Comments</a></li>
+									<li><a href="#"><span class="icon17"></span>New mail</a></li>
+									<li><a href="#"><span class="icon16"></span>Database</a></li>
+									<li><a href="#"><span class="icon18"></span>Favorites</a></li>
+									<li><a href="#"><span class="icon19"></span>Security settings</a></li>
+									<li><a href="#"><span class="icon20"></span>New page</a></li>
+								</ul>
+								<div class="clear"></div>
+							</div>										
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>						
+					</section><!-- End of #second_top_bar -->
+				</section><!-- End of .top_in -->
+				
+			</section><!-- End of #top -->
+			
+
+			
+	
+			<section id="container" class="container_12">
+			
+			
+				<!-- ======= .grid_12 - block begin ======= -->
+				<section class="grid_12">
+					<div class="box">
+						<div class="title"><div class="layout">Charts</div></div>						
+						<div class="inside">
+							<div class="in">
+							
+							<div class="clear"></div>
+							<a href="zAccordion.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Accordion</a>
+							<a href="zDataTables.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Data Tables</a>
+							<div class="clear"></div>
+							
+							<h4 class="docs_title_first">Charts</h4>
+							
+							<p class="grid_6">Charts from this template use Flotr2 library. Flotr2 is a library for drawing HTML5 charts and graphs.  It is a branch of <a title="flotr" href="http://code.google.com/p/flotr/" target="_blank">flotr</a> which removesthe Prototype dependency and includes many improvements.
+							
+							</p>
+							
+							<p class="grid_6">
+							  To use Flotr2, include the <code>flotr2.min.js</code> script in your page and
+							  create a visible <code>&lt;div&gt;</code> with positive width and height.
+							  <br />A graph is drawn with the <code>Flotr.draw(container, data, options)</code>
+							  method.
+							</p><div class="clear"></div>
+							
+							<h5 class="docs_title_first">Features</h5>
+							</p><div class="clear"></div>
+								
+								<div class="grid_6">
+								<ul>
+									<li>mobile support</li>
+									<li>framework independent</li>
+									<li>extensible plugin framework</li>
+									<li>custom chart types</li>
+									<li>FF, Chrome, IE6+, Android, iOS</li>
+								</ul>
+								</div>
+								<div class="grid_6">
+								<ol>
+									<li>lines</li>
+									<li>bars</li>
+									<li>candles</li>
+									<li>pies</li>
+									<li>bubbles</li>
+								</ol>
+								</div>
+							</p><div class="clear"></div>
+							
+							
+							
+							<h5 class="docs_title">How to create a Chart?</h5>
+							
+							
+							<p><strong>1. Create a new function, in this mode:</strong></p>
+<pre>(function () {
+
+  // Some code to be here...
+  
+})();</pre><br />
+
+							<p><strong>2. Define some variables. </strong></p>
+<pre>var
+	container = document.getElementById('my_graph_example_doc'), //Container ID
+	d1 = [[0, 2], [1, 0],[2, 12], [3, 10], [4, 9],[4.5, 11], [5, 9],[7, 12],[8, 8], [9, 16]], // First data series
+	d2 = [[0, 0],[1, 5], [2, 3], [3, 6], [4, 3.5],[5, 8], [6, 3.9], [7, 9], [8, 6], [9, 10]],  // Second data series
+	graph; //This variable allow us to draw the chart. Add also other variables here, separated by comma(,)</pre><br />
+	
+							<p><em>Data series work in this mode</em>: 
+							
+<pre>
+newVariable = [[X<sub>1</sub>, Y<sub>1</sub>], [X<sub>2</sub>, Y<sub>2</sub>],[X<sub>3</sub>, Y<sub>3</sub>], ..., [X<sub>n</sub>, Y<sub>n</sub>]]
+</pre><br />							
+							</p>
+							
+
+							<p><strong>3. Create the graph:</strong></p>
+<pre><code>graph</code> = Flotr.draw(container, [ d1, d2], {
+
+	//Options here
+	
+  });</pre><br />
+
+							
+
+							<p><strong>3. Add some options:</strong></p>
+<pre><code>graph</code> = Flotr.draw(container, [ d1, d2], {
+
+	xaxis: {
+	  minorTickFreq: 4 	// number of minor ticks between major ticks for autogenerated ticks
+	}, //end of xaxis
+	
+	grid: {
+	  minorVerticalLines	: true 	// whether to show gridlines in vertical direction. <code>true</code> or <code>false</code>
+	}, //end of grid
+	
+	mouse: {
+	  track: true,  // true to track the mouse, no tracking otherwise
+	  radius: 13,  // radius of the track point
+	}, //end of mouse
+	
+	colors: ['#CE4D60', '#9851CE'],  // Some custom colors(optional). // end of colors
+	shadowSize: 0, //My preference, to set graph shadow to 0.  // end of shadowSize
+	
+  });</pre><br />
+  
+  
+
+							<p><strong>4. Final code:</strong></p>
+<pre>(function () {
+
+var
+	container = document.getElementById('<code>my_graph_example_doc</code>'), //Container ID
+	d1 = [[0, 2], [1, 0],[2, 12], [3, 10], [4, 9],[4.5, 11], [5, 9],[7, 12],[8, 8], [9, 16]], // First data series
+	d2 = [[0, 0],[1, 5], [2, 3], [3, 6], [4, 3.5],[5, 8], [6, 3.9], [7, 9], [8, 6], [9, 10]],  // Second data series
+	graph; //This variable allow us to draw the chart. Add also other variables here, separated by comma(,)
+	
+graph = Flotr.draw(container, [ d1, d2], {
+
+	xaxis: {
+	  minorTickFreq: 4 	// number of minor ticks between major ticks for autogenerated ticks
+	}, //end of xaxis
+	
+	grid: {
+	  minorVerticalLines	: true 	// whether to show gridlines in vertical direction. true or false
+	}, //end of grid
+	
+	mouse: {
+	  track: true,  // true to track the mouse, no tracking otherwise
+	  radius: 13,  // radius of the track point
+	}, //end of mouse
+	
+	colors: ['#CE4D60', '#9851CE'],  // Some custom colors(optional). // end of colors
+	shadowSize: 0, //My preference, to set graph shadow to 0.  // end of shadowSize
+	
+  });
+  
+})();</pre><br />
+
+
+
+							<p><strong>5. Create the graph in a DIV with the ID from initialization script <code>"my_graph_example_doc"</code> and a valid <em>width</em> and <em>height</em> :</strong></p>
+
+<pre><br /> &lt;div id=<code>"my_graph_example_doc"</code> style="<code>width: 100%</code>; <code>height: 200px</code>">&lt;/div>
+<br /></pre><br />
+
+
+
+
+							<div class="docs_result"><span class="docsR_title">FINAL RESULT:</span>		
+										
+									<div id="my_graph_example_doc" style="width: 100%; height: 200px;"></div>
+									
+								</form><br/>
+							</div>
+							<div class="clear"></div>
+
+
+
+<script>
+//<![CDATA[
+(function () {
+
+var
+	container = document.getElementById('my_graph_example_doc'), //Container ID
+	d1 = [[0, 2], [1, 0],[2, 12], [3, 10], [4, 9],[4.5, 11], [5, 9],[7, 12],[8, 8], [9, 16]], // First data series
+	d2 = [[0, 0],[1, 5], [2, 3], [3, 6], [4, 3.5],[5, 8], [6, 3.9], [7, 9], [8, 6], [9, 10]],  // Second data series
+	graph; //This variable allow us to draw the chart. Add also other variables here, separated by comma(,)
+	
+graph = Flotr.draw(container, [ d1, d2 ], {
+
+	xaxis: {
+	  minorTickFreq: 4 	// number of minor ticks between major ticks for autogenerated ticks
+	}, //end of xaxis
+	
+	grid: {
+	  minorVerticalLines: true 	// whether to show gridlines in vertical direction. true or false
+	}, //end of grid
+	
+	mouse: {
+	  track: true,  // true to track the mouse, no tracking otherwise
+	  radius: 13,  // radius of the track point
+	}, //end of mouse
+	
+	colors: ['#CE4D60', '#9851CE'],  // Some custom colors(optional). // end of colors
+	shadowSize: 0, //My preference, to set graph shadow to 0.  // end of shadowSize
+	
+  });
+  
+})();
+//]]>
+</script>
+
+							<br />
+							<div class="clear"></div>
+							<h5 class="docs_title">It's good to know!</h5>
+							<div class="clear"></div>
+
+							<p><strong>Basically you can create a chart with zero options. Pretty cool :)   Bellow is an example of the same graph but without any options.</strong></p>
+<pre>(function () {
+
+var
+	container = document.getElementById('<code>my_graph_example_doc2</code>'), //Container ID
+	d1 = [[0, 2], [1, 0],[2, 12], [3, 10], [4, 9],[4.5, 11], [5, 9],[7, 12],[8, 8], [9, 16]], // First data series
+	d2 = [[0, 0],[1, 5], [2, 3], [3, 6], [4, 3.5],[5, 8], [6, 3.9], [7, 9], [8, 6], [9, 10]],  // Second data series
+	graph; //This variable allow us to draw the chart. Add also other variables here, separated by comma(,)
+	
+graph = Flotr.draw(container, [ d1, d2]);
+  
+})();</pre><br />
+
+
+
+
+							<div class="docs_result"><span class="docsR_title">RESULT:</span>		
+										
+									<div id="my_graph_example_doc2" style="width: 100%; height: 200px;"></div>
+									
+								</form><br/>
+							</div>
+							<div class="clear"></div>
+							
+							
+<script>
+//<![CDATA[
+(function () {
+
+var
+	container = document.getElementById('my_graph_example_doc2'), //Container ID
+	d1 = [[0, 2], [1, 0],[2, 12], [3, 10], [4, 9],[4.5, 11], [5, 9],[7, 12],[8, 8], [9, 16]], // First data series
+	d2 = [[0, 0],[1, 5], [2, 3], [3, 6], [4, 3.5],[5, 8], [6, 3.9], [7, 9], [8, 6], [9, 10]],  // Second data series
+	graph; //This variable allow us to draw the chart. Add also other variables here, separated by comma(,)
+	
+graph = Flotr.draw(container, [ d1, d2 ]);
+  
+})();
+//]]>
+</script>
+
+
+							
+							<br />
+							<div class="clear"></div>
+							<h4 class="docs_title">Options</h4>
+							<div class="clear"></div>
+							
+							<br />
+							
+<pre>(/**
+ * Flotr Defaults
+ */
+Flotr.defaultOptions = {
+  colors: ['#00A8F0', '#C0D800', '#CB4B4B', '#4DA74D', '#9440ED'], //=> The default colorscheme. When there are > 5 series, additional colors are generated.
+  ieBackgroundColor: '#FFFFFF', // Background color for excanvas clipping
+  title: null,             // => The graph's title
+  subtitle: null,          // => The graph's subtitle
+  shadowSize: 4,           // => size of the 'fake' shadow
+  defaultType: null,       // => default series type
+  HtmlText: true,          // => wether to draw the text using HTML or on the canvas
+  fontColor: '#545454',    // => default font color
+  fontSize: 7.5,           // => canvas' text font size
+  resolution: 1,           // => resolution of the graph, to have printer-friendly graphs !
+  parseFloat: true,        // => whether to preprocess data for floats (ie. if input is string)
+  xaxis: {
+    ticks: null,           // => format: either [1, 3] or [[1, 'a'], 3]
+    minorTicks: null,      // => format: either [1, 3] or [[1, 'a'], 3]
+    showLabels: true,      // => setting to true will show the axis ticks labels, hide otherwise
+    showMinorLabels: false,// => true to show the axis minor ticks labels, false to hide
+    labelsAngle: 0,        // => labels' angle, in degrees
+    title: null,           // => axis title
+    titleAngle: 0,         // => axis title's angle, in degrees
+    noTicks: 5,            // => number of ticks for automagically generated ticks
+    minorTickFreq: null,   // => number of minor ticks between major ticks for autogenerated ticks
+    tickFormatter: Flotr.defaultTickFormatter, // => fn: number, Object -> string
+    tickDecimals: null,    // => no. of decimals, null means auto
+    min: null,             // => min. value to show, null means set automatically
+    max: null,             // => max. value to show, null means set automatically
+    autoscale: false,      // => Turns autoscaling on with true
+    autoscaleMargin: 0,    // => margin in % to add if auto-setting min/max
+    color: null,           // => color of the ticks
+    mode: 'normal',        // => can be 'time' or 'normal'
+    timeFormat: null,
+    scaling: 'linear',     // => Scaling, can be 'linear' or 'logarithmic'
+    base: Math.E,
+    titleAlign: 'center',
+    margin: true           // => Turn off margins with false
+  },
+  x2axis: {},
+  yaxis: {
+    ticks: null,           // => format: either [1, 3] or [[1, 'a'], 3]
+    minorTicks: null,      // => format: either [1, 3] or [[1, 'a'], 3]
+    showLabels: true,      // => setting to true will show the axis ticks labels, hide otherwise
+    showMinorLabels: false,// => true to show the axis minor ticks labels, false to hide
+    labelsAngle: 0,        // => labels' angle, in degrees
+    title: null,           // => axis title
+    titleAngle: 90,        // => axis title's angle, in degrees
+    noTicks: 5,            // => number of ticks for automagically generated ticks
+    minorTickFreq: null,   // => number of minor ticks between major ticks for autogenerated ticks
+    tickFormatter: Flotr.defaultTickFormatter, // => fn: number, Object -> string
+    tickDecimals: null,    // => no. of decimals, null means auto
+    min: null,             // => min. value to show, null means set automatically
+    max: null,             // => max. value to show, null means set automatically
+    autoscale: false,      // => Turns autoscaling on with true
+    autoscaleMargin: 0,    // => margin in % to add if auto-setting min/max
+    color: null,           // => The color of the ticks
+    scaling: 'linear',     // => Scaling, can be 'linear' or 'logarithmic'
+    base: Math.E,
+    titleAlign: 'center',
+    margin: true           // => Turn off margins with false
+  },
+  y2axis: {
+    titleAngle: 270
+  },
+  grid: {
+    color: '#545454',      // => primary color used for outline and labels
+    backgroundColor: null, // => null for transparent, else color
+    backgroundImage: null, // => background image. String or object with src, left and top
+    watermarkAlpha: 0.4,   // => 
+    tickColor: '#DDDDDD',  // => color used for the ticks
+    labelMargin: 3,        // => margin in pixels
+    verticalLines: true,   // => whether to show gridlines in vertical direction
+    minorVerticalLines: null, // => whether to show gridlines for minor ticks in vertical dir.
+    horizontalLines: true, // => whether to show gridlines in horizontal direction
+    minorHorizontalLines: null, // => whether to show gridlines for minor ticks in horizontal dir.
+    outlineWidth: 1,       // => width of the grid outline/border in pixels
+    outline : 'nsew',      // => walls of the outline to display
+    circular: false        // => if set to true, the grid will be circular, must be used when radars are drawn
+  },
+  mouse: {
+    track: false,          // => true to track the mouse, no tracking otherwise
+    trackAll: false,
+    position: 'se',        // => position of the value box (default south-east)
+    relative: false,       // => next to the mouse cursor
+    trackFormatter: Flotr.defaultTrackFormatter, // => formats the values in the value box
+    margin: 5,             // => margin in pixels of the valuebox
+    lineColor: '#FF3F19',  // => line color of points that are drawn when mouse comes near a value of a series
+    trackDecimals: 1,      // => decimals for the track values
+    sensibility: 2,        // => the lower this number, the more precise you have to aim to show a value
+    trackY: true,          // => whether or not to track the mouse in the y axis
+    radius: 3,             // => radius of the track point
+    fillColor: null,       // => color to fill our select bar with only applies to bar and similar graphs (only bars for now)
+    fillOpacity: 0.4       // => opacity of the fill color, set to 1 for a solid fill, 0 hides the fill 
+  }
+};
+)(document.getElementById("graphid_here"));</pre><br />
+
+							
+							<!-- Reference -->
+							<div class="docs_refer">
+								<strong>Reference:</strong><br /> 
+								<ul>
+								<li><a href="http://humblesoftware.com/flotr2/" target="_blank">http://humblesoftware.com/flotr2/</a> - Flotr2 official website. For more options and examples, please follow this link. </li>
+								</ul>
+							</div>
+							<!-- /Reference -->
+							
+							
+							<div class="clear"></div>
+							<a href="zAccordion.html" class="button alignleft"><span class="icon16_sprite_green i_arrowhead_left"></span>Accordion</a>
+							<a href="zDataTables.html" class="button alignright"><span class="icon16_sprite_green b_right i_arrowhead_right"></span>Data Tables</a>
+							<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="clear"></div>
+				<!-- ======= .grid_12 - block end ======= -->
+				
+				
+			</section><!-- End of #container -->
+			
+
+			
+			
+		</section><!-- End of #layout -->
+		<div class="clear"></div>
+
+		<section id="footer_bar">
+			<div class="copyr">Copyright &copy; Smartik 2012</div>
+		</section>		
+		
+		
+		<!-- Bottom Scripts -->
+		<script type="text/javascript" src="js/jqueryui_init.js"></script>
+		<script type="text/javascript" src="js/flotr2_init.js"></script>	
+		<script type="text/javascript" src="js/bottom_scripts.js"></script>
+		<script type="text/javascript" src="js/custom_pages.js"></script>
+		<script type="text/javascript" src="js/jquery.thumbnailScroller.js"></script>
+				
+    </body>
+</html>

@@ -10,7 +10,7 @@ class GroupsController < InheritedResources::Base
     @users = Customer.find(current_customer.id).users
     super
   end
-  def create
+  def new
     @users = Customer.find(current_customer.id).users
     super
   end
