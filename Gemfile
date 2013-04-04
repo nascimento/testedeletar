@@ -7,9 +7,11 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
-gem 'mysql2'
-gem 'execjs'
-gem 'therubyracer'
+group :production do
+  gem 'mysql2'
+  gem 'execjs'
+  gem 'therubyracer'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -42,10 +44,10 @@ gem 'awesome_nested_set'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
