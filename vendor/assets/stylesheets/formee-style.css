@@ -74,7 +74,7 @@ Style
 	font-size:1.4em;
 	line-height: .85em;
 }
-.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select {
+.formee .formee-txt, .formee input[type="email"], .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select {
 	border-color:#c6c6c6;
 	background: #fff;
 	color:#999;
@@ -93,12 +93,12 @@ Style
 	background: #fafafa;
 	color:#999;
 }
-.formee .formee-txt:hover, .formee input[type="text"]:hover, .formee input[type="password"]:hover, .formee input[type="file"]:hover, .formee textarea:hover, .formee select:hover {
+.formee .formee-txt:hover, .formee input[type="email"], .formee input[type="text"]:hover, .formee input[type="password"]:hover, .formee input[type="file"]:hover, .formee textarea:hover, .formee select:hover {
 	color:#666;
 	background: #fff none;
 	border-color:#c6c6c6;
 }
-form .formee-txt:focus, .formee input[type="text"]:focus, .formee input[type="password"]:focus, .formee input[type="file"]:focus, .formee textarea:focus, .formee select:focus  {
+form .formee-txt:focus, .formee input[type="email"], .formee input[type="text"]:focus, .formee input[type="password"]:focus, .formee input[type="file"]:focus, .formee textarea:focus, .formee select:focus  {
 	color:#222;
 	outline: 0;
 }

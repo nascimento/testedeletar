@@ -1,4 +1,6 @@
 class UsersController < InheritedResources::Base
+  before_filter :authenticate_user!
+  
   actions :index, :show, :destroy, :edit, :update
   respond_to :html, :json, :xml
 

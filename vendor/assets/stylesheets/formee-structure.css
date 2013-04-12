@@ -114,7 +114,7 @@ Structure
 	margin: 0.2em 0 0.5em;
 }
 
-.formee .formee-txt, .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select{
+.formee .formee-txt, .formee input[type="email"], .formee input[type="text"], .formee input[type="password"], .formee input[type="file"], .formee textarea, .formee select{
 	vertical-align: middle;
 	line-height: 1.1em;
 	width: 100%;

@@ -1,4 +1,6 @@
 class CustomersController < InheritedResources::Base
+  before_filter :authenticate_user!
+  
   actions :all
   respond_to :html, :json, :xml
   

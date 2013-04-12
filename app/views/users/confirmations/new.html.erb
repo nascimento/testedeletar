@@ -1,16 +1,27 @@
-<h2>Resend confirmation instructions</h2>
+<%= simple_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post , :class => "formee" }) do |f| %>
+<div class="box">
+	<div class="title"><span class="icon16_sprite i_user"></span>Resend confirmation instructions</div>
+	
+	<div class="inside">
+		<div class="in">
+			<%= f.error_notification %>
+			
+			<%= f.full_error :confirmation_token %>
+			
+		    <%= f.input :email, :required => true, :autofocus => true %>
 
-<%= simple_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= f.error_notification %>
-  <%= f.full_error :confirmation_token %>
-
-  <div class="form-inputs">
-    <%= f.input :email, :required => true, :autofocus => true %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Resend confirmation instructions" %>
-  </div>
+			<div class="clear"></div>
+			
+		</div>
+		<section class="box_footer">
+			<div class="grid-6-12">
+				<%= render "devise/shared/links" %>
+			</div>
+			<div class="grid-6-12">
+				<%= f.button :submit, "Resend confirmation instructions", :class => "right button green" %>
+			</div>
+			<div class="clear"></div>
+		</section>
+	</div>
+</div>
 <% end %>
-
-<%= render "devise/shared/links" %>

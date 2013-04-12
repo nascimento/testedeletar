@@ -3,6 +3,18 @@ class ApplicationController < ActionController::Base
   
   before_filter :current_customer
   helper_method :current_customer
+  
+  layout :layout_by_resource
+
+protected
+
+  def layout_by_resource
+    if devise_controller?
+      "devise"
+    else
+      "application"
+    end
+  end
 
 private
 

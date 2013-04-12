@@ -7,9 +7,11 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
-gem 'mysql2'
-gem 'execjs'
-gem 'therubyracer'
+group :production do
+  gem 'mysql2'
+  gem 'execjs'
+  gem 'therubyracer'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -34,6 +36,8 @@ gem 'devise'
 gem 'cancan'
 
 gem 'awesome_nested_set'
+
+gem 'brazilian-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
