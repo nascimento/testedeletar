@@ -24,7 +24,7 @@ role :db,  domain, :primary => true # This is where Rails migrations will run
 role :db,  domain
 
 # if you want to clean up old releases on each deploy uncomment this:
-before "deploy:restart", "bundle:install"
+#before "deploy:restart", "bundle:install"
 after "deploy:restart", "deploy:cleanup"
 
 # if you're still using the script/reaper helper you will need
