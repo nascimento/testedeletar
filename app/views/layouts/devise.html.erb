@@ -23,9 +23,9 @@
 		SCRIPTS BEGIN
 		======================================================================================= -->
 
-		<%= javascript_include_tag :defaults %>
-
 		<%= javascript_include_tag "application" %>
+		<%= javascript_include_tag "global_plugins_scripts" %>
+		
 
 
 	</head>
@@ -53,5 +53,9 @@
 		</section><!-- End of #layout -->
 		<div class="clear"></div>
 
+
+		<!-- Bottom Scripts -->
+		<%= javascript_include_tag "bottom_scripts" %>
+		
 	</body>
 </html>
