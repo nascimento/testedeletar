@@ -74,7 +74,7 @@ Turismoapp::Application.configure do
     :domain =>               'gmail.com',
     :user_name =>            'vitordipreza@gmail.com',
     :password =>             'euvitinho',
-    :authentication =>       'plain',
+    :authentication =>       'login',
     :enable_starttls_auto => true  }
     
 end
