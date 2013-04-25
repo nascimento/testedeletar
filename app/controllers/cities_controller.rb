@@ -4,6 +4,13 @@ class CitiesController < InheritedResources::Base
   actions :all
   respond_to :html, :json, :xml
   
+  caches_page :index
+  
+  def index
+    @cities = City.all
+    super
+  end
+  
   def update
     update!{cities_url}
   end

@@ -4,6 +4,8 @@ class StatesController < InheritedResources::Base
   actions :all
   respond_to :html, :json, :xml
   
+  caches_page :index
+  
   def update
     update!{states_url}
   end
