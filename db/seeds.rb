@@ -19,10 +19,10 @@ module BRPopulate
  
   def self.populate
     states.each do |state|
-      state_obj = State.create(:acronym => state["acronym"], :name => state["name"])
+      state_obj = State.find_or_create_by_name(:acronym => state["acronym"], :name => state["name"])
  
       state["cities"].each do |city|
-        City.create(:name => city, :state_id => state_obj.id, :capital => capital?(city, state))
+        City.find_or_create_by_name(:name => city, :state_id => state_obj.id, :capital => capital?(city, state))
       end
     end
   end

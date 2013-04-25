@@ -7,7 +7,7 @@ class CitiesController < InheritedResources::Base
   caches_page :index
   
   def index
-    @cities = City.all
+    @cities = City.includes(:state).all
     super
   end
   
