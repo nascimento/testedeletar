@@ -7,8 +7,11 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :nickname, :customer_id, :group_ids, :cpf, :cnpj
   
+  # Validations
   validates_presence_of :nickname, :email, :name
   validates_presence_of :cpf, :unless => :cnpj?
+  validates_presence_of :cnpj, :unless => :cpf?
+  validates_uniqueness_of :cnpj, :cpf, :email
 
   # Relations
   belongs_to :customer

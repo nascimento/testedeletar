@@ -10,13 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130412025203) do
+ActiveRecord::Schema.define(:version => 20130425014623) do
 
   create_table "customers", :force => true do |t|
     t.string   "name"
     t.string   "hostname"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "cnpj"
   end
 
   create_table "groups", :force => true do |t|
