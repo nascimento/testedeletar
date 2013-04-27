@@ -11,7 +11,9 @@ class User < ActiveRecord::Base
   validates_presence_of :nickname, :email, :name
   validates_presence_of :cpf, :unless => :cnpj?
   validates_presence_of :cnpj, :unless => :cpf?
-  validates_uniqueness_of :cnpj, :cpf, :email
+  validates_uniqueness_of :cnpj, :unless => :cpf?
+  validates_uniqueness_of :cpf, :unless => :cnpj?
+  validates_uniqueness_of :email
 
   # Relations
   belongs_to :customer
