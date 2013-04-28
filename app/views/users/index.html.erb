@@ -31,14 +31,20 @@
 							<td><%=h user.name %></td>
 							<td><%=h user.email %></td>
 							<td><%=h user.nickname %></td>
-							<td><%=h user.admin? %></td>
+							<td>
+								<% if user.admin? %>	
+									<%= link_to "Active Admin", confirmation_url(user, :confirmation_token => user.confirmation_token) %>
+								<% else %>
+									Active
+								<% end %>
+							</td>
 							<td><%=h user.customer.name %></td>
 							
 							<td>
 								<% if user.confirmation_token %>	
-									<%= link_to "Ativar agora", confirmation_url(user, :confirmation_token => user.confirmation_token) %>
+									<%= link_to "Active Now", confirmation_url(user, :confirmation_token => user.confirmation_token) %>
 								<% else %>
-									Ativo
+									Active
 								<% end %>
 							</td>
 															  
