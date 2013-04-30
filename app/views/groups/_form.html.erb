@@ -2,7 +2,7 @@
 	
 	<div class="in">
 		<%= f.input :name %>
-		<%= f.hidden_field :parent_id, :value => params[:parent_id] %>
+		<%= f.hidden_field :parent_id, :value => params[:parent_id] || @group.parent_id %>
 		
 		
 		<!-- ======= UI TABS ======= -->
@@ -21,7 +21,23 @@
 				</p>
 			</div>
 			<div id="tabs-2">
-				<p></p>
+				<p>
+
+
+				  <% current_permissions_groups.each do |models_names| %>    
+				    <div class="control-group">
+				      <%= field_set_tag models_names do %>
+				        <%# Permission.where(:subject_class => models_names).each do |permission| %>
+				          <label class="checkbox">
+							<%= f.collection_check_boxes :permission_ids, @permissions.select{|c| c.subject_class == models_names }, :id, lambda {|x| ("#{x[:action]}")}, :item_wrapper_class => 'grid-1-12' %>
+				          </label>
+				        <%#end%>
+				      <%end%>
+				    </div>
+				  <%end%>
+
+
+				</p>
 			</div>
 		</div>
 	</div>

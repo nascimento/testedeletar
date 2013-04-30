@@ -1,5 +1,6 @@
 class GroupsController < InheritedResources::Base
   before_filter :authenticate_user!
+  load_and_authorize_resource
 
   actions :all
   respond_to :html, :json, :xml
@@ -10,10 +11,12 @@ class GroupsController < InheritedResources::Base
   end
   def edit
     @users = Customer.find(current_customer.id).users
+    @permissions = Permission.all
     super
   end
   def new
     @users = Customer.find(current_customer.id).users
+    @permissions = Permission.all
     super
   end
   def update

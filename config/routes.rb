@@ -1,10 +1,14 @@
 Turismoapp::Application.routes.draw do
+
   get "dashboard/index", :as => "dashboard"
+  get "help/index", :as => "help"
   
   devise_for :users, :path => "auth", :controllers => { :sessions => :sessions, :registrations => :registrations, :confirmations => :confirmations }, :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'register', :sign_up => 'register_me' }
   
   resources :users  
   resources :groups
+  resources :permissions
+
   resources :customers
 
   resources :cities

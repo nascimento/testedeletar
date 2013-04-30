@@ -139,35 +139,37 @@
 								</ul>
 							</li>
 							
-							<% if current_user %>
 							<li>
 								<a href="#">Administration</a>
 								<ul>
 									<% if current_user.admin? %>
 									<li>
-										<%= link_to :Customers, customers_path %>
+										<%= link_to :Customers, customers_path if can? :index, Customer %>
 									</li>
 									<% end %>
 									<li>
-										<%= link_to :Groups, groups_path %>
+										<%= link_to :Groups, groups_path if can? :index, Group %>
 									</li>
 									<li>
-										<%= link_to :Users, users_path %>
+										<%= link_to :Users, users_path if can? :index, User %>
 									</li>
 									<li>
 										<a href="#">Supply (Others)</a>
 										<ul>
 											<li>
-												<%= link_to :States, states_path %>
+												<%= link_to :States, states_path if can? :index, State %>
 											</li>
 											<li>
-												<%= link_to :Cities, cities_path %>
+												<%= link_to :Cities, cities_path if can? :index, City %>
 											</li>
 										</ul>
 									</li>
 								</ul>
 							</li>
-							<% end %>
+							
+							<li>
+								<%= link_to :Help, help_path %>
+							</li>
 						</ul>
 						<div class="clear"></div>
 					</section><!-- End of #main_menu -->
@@ -193,13 +195,13 @@
 										<%= link_to "<span class='icon2'></span>".html_safe + :Agenda, dashboard_path %>
 									</li>
 									<li>
-										<%= link_to "<span class='icon9'></span>".html_safe + :Users, users_path %>
+										<%= link_to "<span class='icon9'></span>".html_safe + :Users, users_path if can? :index, User %>
 									</li>
 									<li>
-										<%= link_to "<span class='icon19'></span>".html_safe + :Groups, groups_path %>
+										<%= link_to "<span class='icon19'></span>".html_safe + :Groups, groups_path if can? :index, Group %>
 									</li>
 									<li>
-										<%= link_to "<span class='icon6'></span>".html_safe + :Customers, customers_path %>
+										<%= link_to "<span class='icon6'></span>".html_safe + :Customers, customers_path if can? :index, Customer %>
 									</li>
 									
 								</ul>
