@@ -7,6 +7,6 @@ class CreatePermissions < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :permissions, :group_id
+    add_index :permissions, :subject_class
   end
 end
